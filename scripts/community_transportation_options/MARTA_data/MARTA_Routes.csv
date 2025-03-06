@@ -1,0 +1,395 @@
+﻿OBJECTID,shape_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_type_text,Shape__Length
+1,119402,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+2,119403,15772,809,Monroe Drive / Boulevard,,3,https://itsmarta.com/809.aspx,FF0000,,Bus,0.0927941179070405
+3,119404,15688,42,Pryor Road,,3,https://itsmarta.com/42.aspx,FF8000,,Bus,0.13847203611779
+4,119405,15697,68,Benjamin E Mays Drive,,3,https://itsmarta.com/68.aspx,FF0000,,Bus,0.0650372668483711
+5,119406,15729,124,Pleasantdale Road,,3,https://itsmarta.com/124.aspx,FF00FF,,Bus,0.138629680076045
+6,119407,15732,132,Tilly Mill Road,,3,https://itsmarta.com/132.aspx,FF00FF,,Bus,0.0943477701188307
+7,119408,15739,150,Dunwoody Village,,3,https://itsmarta.com/150.aspx,00FFFF,,Bus,0.0619748777401058
+8,119409,15752,189,Flat Shoals Road / Scofield Road,,3,https://itsmarta.com/189.aspx,FF00FF,,Bus,0.169603442181091
+9,119410,15667,4,Moreland Avenue,,3,https://itsmarta.com/4.aspx,FF00FF,,Bus,0.0986601056121015
+10,119411,15669,6,Clifton Road / Emory,,3,https://itsmarta.com/6.aspx,008080,,Bus,0.140352551566415
+11,119412,15685,37,Defoors Ferry Road,,3,https://itsmarta.com/37.aspx,00FF80,,Bus,0.105801881711434
+12,119413,15696,66,Lynhurst Drive / Princeton Lakes,,3,https://itsmarta.com/66.aspx,00FFFF,,Bus,0.215061390252888
+13,119414,15725,119,Hairston Road / Stone Mtn Village,,3,https://itsmarta.com/119.aspx,008080,,Bus,0.170925398379561
+14,119415,15760,221,Memorial Drive Limited,,3,https://itsmarta.com/221.aspx,FF00FF,,Bus,0.0906289588955026
+15,119416,15688,42,Pryor Road,,3,https://itsmarta.com/42.aspx,FF8000,,Bus,0.147583015619826
+16,119417,15690,49,McDonough Boulevard,,3,https://itsmarta.com/49.aspx,FF8040,,Bus,0.125237611936479
+17,119418,15727,121,Memorial Drive / N Hairston Road,,3,https://itsmarta.com/121.aspx,00FFFF,,Bus,0.160821521485824
+18,119419,15735,141,Haynes Bridge Road / Milton,,3,https://itsmarta.com/141.aspx,FF00FF,,Bus,0.25135131993136
+19,119420,15745,178,Empire Blvd / Southside Ind Park,,3,https://itsmarta.com/178.aspx,00FFFF,,Bus,0.0344344173124699
+20,119421,15747,181,Washington Road / Fairburn,,3,https://itsmarta.com/181.aspx,FF8040,,Bus,0.246246882349785
+21,119422,15751,188,Oakley Industrial,,3,https://itsmarta.com/188.aspx,FF00FF,,Bus,0.220807939517301
+22,119423,15758,196,Upper Riverdale / Southlake,,3,https://itsmarta.com/196.aspx,00FFFF,,Bus,0.186396553864709
+23,119424,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+24,119425,15782,867,Peyton Forest / Dixie Hills,,3,https://itsmarta.com/867.aspx,00FFFF,,Bus,0.108407689814203
+25,119426,15793,198,Battle Creek Road,,3,https://itsmarta.com/198.aspx,00FF00,,Bus,0.130813935877618
+26,119427,15675,19,Clairmont Road / Howard Avenue,,3,https://itsmarta.com/19.aspx,FF00FF,,Bus,0.169480473343733
+27,119428,15678,25,Peachtree Boulevard,,3,https://itsmarta.com/25.aspx,FF00FF,,Bus,0.103819259112033
+28,119429,15699,73,Fulton Industrial,,3,https://itsmarta.com/73.aspx,008000,,Bus,0.161680648551664
+29,119430,15735,141,Haynes Bridge Road / Milton,,3,https://itsmarta.com/141.aspx,FF00FF,,Bus,0.240157916480244
+30,119431,15751,188,Oakley Industrial,,3,https://itsmarta.com/188.aspx,FF00FF,,Bus,0.326165603009222
+31,119432,15751,188,Oakley Industrial,,3,https://itsmarta.com/188.aspx,FF00FF,,Bus,0.317056594995162
+32,119433,15700,74,Flat Shoals Road,,3,https://itsmarta.com/74.aspx,FF8000,,Bus,0.132722712081844
+33,119434,15713,94,Northside Drive,,3,https://itsmarta.com/94.aspx,008000,,Bus,0.0934907854412211
+34,119435,15742,162,Myrtle Drive / Alison Court,,3,https://itsmarta.com/162.aspx,008080,,Bus,0.0589162647939304
+35,119436,15744,172,Sylvan Road / Virginia Avenue,,3,https://itsmarta.com/172.aspx,FF8040,,Bus,0.146294872439105
+36,119437,15777,832,Grant Park,,3,https://itsmarta.com/832.aspx,00FF00,,Bus,0.0902120152984932
+37,119438,15778,850,Carroll Heights / Fairburn Heights,,3,https://itsmarta.com/850.aspx,FF00FF,,Bus,0.112201692204684
+38,119439,15667,4,Moreland Avenue,,3,https://itsmarta.com/4.aspx,FF00FF,,Bus,0.101165537169285
+39,119440,15668,5,Piedmont Road / Sandy Springs,,3,https://itsmarta.com/5.aspx,00FFFF,,Bus,0.151614185821924
+40,119441,15676,21,Memorial Drive,,3,https://itsmarta.com/21.aspx,FF00FF,,Bus,0.0691961310002173
+41,119442,15689,47,I-85 Access Road,,3,https://itsmarta.com/47.aspx,FF8080,,Bus,0.139488349363378
+42,119443,15698,71,Cascade Road,,3,https://itsmarta.com/71.aspx,FF8080,,Bus,0.135627245083359
+43,119444,15727,121,Memorial Drive / N Hairston Road,,3,https://itsmarta.com/121.aspx,00FFFF,,Bus,0.075490367551886
+44,119445,15743,165,Fairburn Road,,3,https://itsmarta.com/165.aspx,00FFFF,,Bus,0.119759941780278
+45,119446,15753,191,Riverdale / ATL Intl Terminal,,3,https://itsmarta.com/191.aspx,FF00FF,,Bus,0.402298791177793
+46,119447,15673,14,14th Street / Blandtown,,3,https://itsmarta.com/14.aspx,00FF00,,Bus,0.101813284774201
+47,119448,15723,116,Redan Road,,3,https://itsmarta.com/116.aspx,00FFFF,,Bus,0.197465785130662
+48,119449,15779,853,Center Hill,,3,https://itsmarta.com/853.aspx,A6CAF0,,Bus,0.130192510278621
+49,119451,15674,15,Candler Road,,3,https://itsmarta.com/15.aspx,00FF00,,Bus,0.203538264151389
+50,119452,15680,27,Cheshire Bridge Road,,3,https://itsmarta.com/27.aspx,FF0080,,Bus,0.0924906541161103
+51,119453,15726,120,East Ponce De Leon Avenue,,3,https://itsmarta.com/120.aspx,FF00FF,,Bus,0.12283377550471
+52,119454,15785,ATLSC,Atlanta Streetcar,,0,https://itsmarta.com/Atlanta-Street-Car-Info.aspx,FF00FF,,"Tram, Streetcar, Light rail",0.0185828357602226
+53,119455,15793,198,Battle Creek Road,,3,https://itsmarta.com/198.aspx,00FF00,,Bus,0.140051694856845
+54,119456,15676,21,Memorial Drive,,3,https://itsmarta.com/21.aspx,FF00FF,,Bus,0.165902528701206
+55,119457,15688,42,Pryor Road,,3,https://itsmarta.com/42.aspx,FF8000,,Bus,0.148508555223802
+56,119458,15690,49,McDonough Boulevard,,3,https://itsmarta.com/49.aspx,FF8040,,Bus,0.12298698732784
+57,119459,15700,74,Flat Shoals Road,,3,https://itsmarta.com/74.aspx,FF8000,,Bus,0.131986826686237
+58,119460,15701,75,Lawrenceville Highway,,3,https://itsmarta.com/75.aspx,00FF00,,Bus,0.176029032865106
+59,119461,15739,150,Dunwoody Village,,3,https://itsmarta.com/150.aspx,00FFFF,,Bus,0.0711041799606563
+60,119462,15745,178,Empire Blvd / Southside Ind Park,,3,https://itsmarta.com/178.aspx,00FFFF,,Bus,0.130308585334826
+61,119463,15746,180,Roosevelt Highway,,3,https://itsmarta.com/180.aspx,FF00FF,,Bus,0.287481272155987
+62,119464,15706,83,Campbellton Road,,3,https://itsmarta.com/83.aspx,00FF00,,Bus,0.10454494217761
+63,119465,15724,117,Rockbridge Road / Panola Road,,3,https://itsmarta.com/117.aspx,00FF00,,Bus,0.258535341988237
+64,119466,15688,42,Pryor Road,,3,https://itsmarta.com/42.aspx,FF8000,,Bus,0.144191175565575
+65,119467,15702,78,Cleveland Avenue,,3,https://itsmarta.com/78.aspx,00FF00,,Bus,0.0847846798180146
+66,119468,15727,121,Memorial Drive / N Hairston Road,,3,https://itsmarta.com/121.aspx,00FFFF,,Bus,0.0693555850174906
+67,119469,15731,126,Embry Hills,,3,https://itsmarta.com/126.aspx,008000,,Bus,0.131017483543552
+68,119470,15760,221,Memorial Drive Limited,,3,https://itsmarta.com/221.aspx,FF00FF,,Bus,0.121376780013162
+69,119471,15674,15,Candler Road,,3,https://itsmarta.com/15.aspx,00FF00,,Bus,0.187749174689961
+70,119472,15675,19,Clairmont Road / Howard Avenue,,3,https://itsmarta.com/19.aspx,FF00FF,,Bus,0.166587836078787
+71,119473,15726,120,East Ponce De Leon Avenue,,3,https://itsmarta.com/120.aspx,FF00FF,,Bus,0.120774453554345
+72,119474,15729,124,Pleasantdale Road,,3,https://itsmarta.com/124.aspx,FF00FF,,Bus,0.14530354679649
+73,119475,15740,153,James Jackson Parkway,,3,https://itsmarta.com/153.aspx,FF8000,,Bus,0.0789686038201991
+74,119476,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+75,119477,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+76,119478,15775,823,Belvedere,,3,https://itsmarta.com/823.aspx,00FF00,,Bus,0.0766923764199022
+77,119479,15669,6,Clifton Road / Emory,,3,https://itsmarta.com/6.aspx,008080,,Bus,0.0722801565297827
+78,119480,15674,15,Candler Road,,3,https://itsmarta.com/15.aspx,00FF00,,Bus,0.191070671173688
+79,119481,15679,26,Marietta Street / Perry Boulevard,,3,https://itsmarta.com/26.aspx,008080,,Bus,0.147034682030868
+80,119482,15688,42,Pryor Road,,3,https://itsmarta.com/42.aspx,FF8000,,Bus,0.146456188544097
+81,119483,15780,856,Baker Hills / Wilson Mill Meadows,,3,https://itsmarta.com/856.aspx,FF8040,,Bus,0.0173891048027914
+82,119484,15696,66,Lynhurst Drive / Princeton Lakes,,3,https://itsmarta.com/66.aspx,00FFFF,,Bus,0.222075846241355
+83,119485,15701,75,Lawrenceville Highway,,3,https://itsmarta.com/75.aspx,00FF00,,Bus,0.155782298489805
+84,119486,15735,141,Haynes Bridge Road / Milton,,3,https://itsmarta.com/141.aspx,FF00FF,,Bus,0.283809674374789
+85,119487,15741,155,Pittsburgh,,3,https://itsmarta.com/155.aspx,00FFFF,,Bus,0.116173329246078
+86,119488,15746,180,Roosevelt Highway,,3,https://itsmarta.com/180.aspx,FF00FF,,Bus,0.282473200406263
+87,119489,15724,117,Rockbridge Road / Panola Road,,3,https://itsmarta.com/117.aspx,00FF00,,Bus,0.241485174996135
+88,119490,15756,194,Conley Road / Mt Zion,,3,https://itsmarta.com/194.aspx,008000,,Bus,0.350808207548004
+89,119491,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+90,119492,15780,856,Baker Hills / Wilson Mill Meadows,,3,https://itsmarta.com/856.aspx,FF8040,,Bus,0.0938215565883444
+91,119493,15782,867,Peyton Forest / Dixie Hills,,3,https://itsmarta.com/867.aspx,00FFFF,,Bus,0.111208176014042
+92,119494,15677,24,McAfee / Hosea Williams,,3,https://itsmarta.com/24.aspx,FF00FF,,Bus,0.234667965562805
+93,119495,15711,89,Old National Highway,,3,https://itsmarta.com/89.aspx,FF8040,,Bus,0.21298991374616
+94,119496,15736,142,East Holcomb Bridge Road,,3,https://itsmarta.com/142.aspx,FF00FF,,Bus,0.123946040532385
+95,119497,15748,183,Greenbriar,,3,https://itsmarta.com/183.aspx,008000,,Bus,0.154790453700064
+96,119498,15754,192,Old Dixie / Tara Boulevard,,3,https://itsmarta.com/192.aspx,008000,,Bus,0.237303557476499
+97,119499,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+98,119500,15674,15,Candler Road,,3,https://itsmarta.com/15.aspx,00FF00,,Bus,0.182427076117965
+99,119501,15686,39,Buford Highway,,3,https://itsmarta.com/39.aspx,008000,,Bus,0.135918500432931
+100,119502,15700,74,Flat Shoals Road,,3,https://itsmarta.com/74.aspx,FF8000,,Bus,0.136815114594786
+101,119503,15705,82,Camp Creek / South Fulton Parkway,,3,https://itsmarta.com/82.aspx,008000,,Bus,0.256242551084401
+102,119504,15711,89,Old National Highway,,3,https://itsmarta.com/89.aspx,FF8040,,Bus,0.207236115984739
+103,119505,15715,102,North Avenue / Little Five Points,,3,https://itsmarta.com/102.aspx,00FF00,,Bus,0.0718390440298577
+104,119506,15727,121,Memorial Drive / N Hairston Road,,3,https://itsmarta.com/121.aspx,00FFFF,,Bus,0.165855916711665
+105,119507,15747,181,Washington Road / Fairburn,,3,https://itsmarta.com/181.aspx,FF8040,,Bus,0.190026198344139
+106,119508,15750,186,Rainbow Drive / South DeKalb,,3,https://itsmarta.com/186.aspx,00FF00,,Bus,0.231112774490581
+107,119509,15750,186,Rainbow Drive / South DeKalb,,3,https://itsmarta.com/186.aspx,00FF00,,Bus,0.233117129059533
+108,119510,15711,89,Old National Highway,,3,https://itsmarta.com/89.aspx,FF8040,,Bus,0.205348810009032
+109,119511,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+110,119512,15669,6,Clifton Road / Emory,,3,https://itsmarta.com/6.aspx,008080,,Bus,0.133841787012677
+111,119513,15672,12,Howell Mill Road / Cumberland,,3,https://itsmarta.com/12.aspx,FF00FF,,Bus,0.121069260961347
+112,119514,15684,36,N Decatur Road / Virginia Highland,,3,https://itsmarta.com/36.aspx,A6CAF0,,Bus,0.153912271383912
+113,119515,15730,125,Clarkston,,3,https://itsmarta.com/125.aspx,008000,,Bus,0.119732797973624
+114,119516,15741,155,Pittsburgh,,3,https://itsmarta.com/155.aspx,00FFFF,,Bus,0.101422531745111
+115,119517,15700,74,Flat Shoals Road,,3,https://itsmarta.com/74.aspx,FF8000,,Bus,0.127902661181891
+116,119518,15720,111,Snapfinger Woods,,3,https://itsmarta.com/111.aspx,008000,,Bus,0.310351482974379
+117,119519,15722,115,Covington Highway,,3,https://itsmarta.com/115.aspx,00FF00,,Bus,0.169137255049756
+118,119520,15722,115,Covington Highway,,3,https://itsmarta.com/115.aspx,00FF00,,Bus,0.225133137423767
+119,119521,15723,116,Redan Road,,3,https://itsmarta.com/116.aspx,00FFFF,,Bus,0.194241385776127
+120,119522,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+121,119523,15774,816,North Highland Avenue,,3,https://itsmarta.com/816.aspx,00FFFF,,Bus,0.120212175046399
+122,119524,15695,60,Hightower Road,,3,https://itsmarta.com/60.aspx,00FFFF,,Bus,0.10423502892965
+123,119525,15709,86,Fairington Road,,3,https://itsmarta.com/86.aspx,A6CAF0,,Bus,0.2511109151024
+124,119526,15730,125,Clarkston,,3,https://itsmarta.com/125.aspx,008000,,Bus,0.122481322075822
+125,119527,15780,856,Baker Hills / Wilson Mill Meadows,,3,https://itsmarta.com/856.aspx,FF8040,,Bus,0.0922026624117543
+126,119528,15783,899,Old Fourth Ward,,3,https://itsmarta.com/899.aspx,FF00FF,,Bus,0.0647503941515088
+127,119529,15672,12,Howell Mill Road / Cumberland,,3,https://itsmarta.com/12.aspx,FF00FF,,Bus,0.107911799839036
+128,119530,15741,155,Pittsburgh,,3,https://itsmarta.com/155.aspx,00FFFF,,Bus,0.104823088528089
+129,119531,15776,825,Johnson Ferry Road,,3,https://itsmarta.com/825.aspx,FF0000,,Bus,0.0665954794191799
+130,119532,15779,853,Center Hill,,3,https://itsmarta.com/853.aspx,A6CAF0,,Bus,0.121246076335612
+131,119533,15783,899,Old Fourth Ward,,3,https://itsmarta.com/899.aspx,FF00FF,,Bus,0.0682995575138317
+132,119534,15722,115,Covington Highway,,3,https://itsmarta.com/115.aspx,00FF00,,Bus,0.231880323927354
+133,119535,15670,8,North Druid Hills Road,,3,https://itsmarta.com/8.aspx,008000,,Bus,0.188896894210408
+134,119536,15684,36,N Decatur Road / Virginia Highland,,3,https://itsmarta.com/36.aspx,A6CAF0,,Bus,0.155441126810238
+135,119537,15724,117,Rockbridge Road / Panola Road,,3,https://itsmarta.com/117.aspx,00FF00,,Bus,0.29151402632045
+136,119538,15726,120,East Ponce De Leon Avenue,,3,https://itsmarta.com/120.aspx,FF00FF,,Bus,0.144743497363791
+137,119539,15733,133,Shallowford Road,,3,https://itsmarta.com/133.aspx,FFFF00,,Bus,0.0954791354414539
+138,119540,15734,140,North Point Parkway,,3,https://itsmarta.com/140.aspx,FF8000,,Bus,0.209077425773713
+139,119541,15751,188,Oakley Industrial,,3,https://itsmarta.com/188.aspx,FF00FF,,Bus,0.229504789085886
+140,119542,15778,850,Carroll Heights / Fairburn Heights,,3,https://itsmarta.com/850.aspx,FF00FF,,Bus,0.0885268334948665
+141,119543,15692,51,Joseph E Boone Boulevard,,3,https://itsmarta.com/51.aspx,00FFFF,,Bus,0.110700167307794
+142,119544,15737,143,Windward Park & Ride,,3,https://itsmarta.com/143.aspx,00FFFF,,Bus,0.261504100823081
+143,119545,15761,295,Metropolitan Campus Express,,3,https://itsmarta.com/295.aspx,008000,,Bus,0.0394111319391838
+144,119546,15681,30,LaVista Road,,3,https://itsmarta.com/30.aspx,00FF00,,Bus,0.159842196637698
+145,119547,15682,32,Bouldercrest,,3,https://itsmarta.com/32.aspx,00FF00,,Bus,0.198775787581479
+146,119548,15720,111,Snapfinger Woods,,3,https://itsmarta.com/111.aspx,008000,,Bus,0.301058638632181
+147,119549,15724,117,Rockbridge Road / Panola Road,,3,https://itsmarta.com/117.aspx,00FF00,,Bus,0.286851220183176
+148,119550,15728,123,Church Street,,3,https://itsmarta.com/123.aspx,00FF00,,Bus,0.0728923578926687
+149,119551,15752,189,Flat Shoals Road / Scofield Road,,3,https://itsmarta.com/189.aspx,FF00FF,,Bus,0.171881269118192
+150,119552,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+151,119554,15666,3,Martin Luther King Jr Dr/Auburn Ave,,3,https://itsmarta.com/3.aspx,FF8000,,Bus,0.116840720038661
+152,119555,15710,87,Roswell Road / Sandy Springs,,3,https://itsmarta.com/87.aspx,00FFFF,,Bus,0.194999375675399
+153,119556,15728,123,Church Street,,3,https://itsmarta.com/123.aspx,00FF00,,Bus,0.0761397439141583
+154,119557,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+155,119558,15680,27,Cheshire Bridge Road,,3,https://itsmarta.com/27.aspx,FF0080,,Bus,0.0893057119412489
+156,119559,15692,51,Joseph E Boone Boulevard,,3,https://itsmarta.com/51.aspx,00FFFF,,Bus,0.110502933881797
+157,119560,15731,126,Embry Hills,,3,https://itsmarta.com/126.aspx,008000,,Bus,0.173852880699969
+158,119561,15744,172,Sylvan Road / Virginia Avenue,,3,https://itsmarta.com/172.aspx,FF8040,,Bus,0.145542345393318
+159,119562,15669,6,Clifton Road / Emory,,3,https://itsmarta.com/6.aspx,008080,,Bus,0.132188038191286
+160,119563,15681,30,LaVista Road,,3,https://itsmarta.com/30.aspx,00FF00,,Bus,0.161888577704457
+161,119564,15729,124,Pleasantdale Road,,3,https://itsmarta.com/124.aspx,FF00FF,,Bus,0.130549314419185
+162,119565,15746,180,Roosevelt Highway,,3,https://itsmarta.com/180.aspx,FF00FF,,Bus,0.285087138222791
+163,119566,15758,196,Upper Riverdale / Southlake,,3,https://itsmarta.com/196.aspx,00FFFF,,Bus,0.255852472569936
+164,119567,15705,82,Camp Creek / South Fulton Parkway,,3,https://itsmarta.com/82.aspx,008000,,Bus,0.0864634821441521
+165,119568,15712,93,Headland Drive / Main Street,,3,https://itsmarta.com/93.aspx,00FFFF,,Bus,0.147677045725325
+166,119569,15754,192,Old Dixie / Tara Boulevard,,3,https://itsmarta.com/192.aspx,008000,,Bus,0.234397672817561
+167,119570,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.313865010165376
+168,119571,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+169,119572,15773,813,Atlanta University Center,,3,https://itsmarta.com/813.aspx,00FFFF,,Bus,0.0838308732773722
+170,119573,15676,21,Memorial Drive,,3,https://itsmarta.com/21.aspx,FF00FF,,Bus,0.162667388116996
+171,119574,15699,73,Fulton Industrial,,3,https://itsmarta.com/73.aspx,008000,,Bus,0.152389752427316
+172,119575,15703,79,Sylvan Hills,,3,https://itsmarta.com/79.aspx,FF8000,,Bus,0.12154815807171
+173,119576,15705,82,Camp Creek / South Fulton Parkway,,3,https://itsmarta.com/82.aspx,008000,,Bus,0.266683606983232
+174,119577,15724,117,Rockbridge Road / Panola Road,,3,https://itsmarta.com/117.aspx,00FF00,,Bus,0.23626251591075
+175,119578,15735,141,Haynes Bridge Road / Milton,,3,https://itsmarta.com/141.aspx,FF00FF,,Bus,0.272336654649489
+176,119579,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.346350070031535
+177,119580,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.293674919965975
+178,119581,15776,825,Johnson Ferry Road,,3,https://itsmarta.com/825.aspx,FF0000,,Bus,0.0692648283838354
+179,119582,15781,865,Boulder Park Drive,,3,https://itsmarta.com/865.aspx,00FF00,,Bus,0.100891386869644
+180,119583,15674,15,Candler Road,,3,https://itsmarta.com/15.aspx,00FF00,,Bus,0.141005242544438
+181,119584,15682,32,Bouldercrest,,3,https://itsmarta.com/32.aspx,00FF00,,Bus,0.1971155575567
+182,119585,15683,34,Gresham Road,,3,https://itsmarta.com/34.aspx,FF00FF,,Bus,0.123222720664709
+183,119586,15683,34,Gresham Road,,3,https://itsmarta.com/34.aspx,FF00FF,,Bus,0.116147937180561
+184,119587,15690,49,McDonough Boulevard,,3,https://itsmarta.com/49.aspx,FF8040,,Bus,0.127491954504663
+185,119588,15691,50,Donald Lee Hollowell Parkway,,3,https://itsmarta.com/50.aspx,00FF00,,Bus,0.1376288210431
+186,119589,15694,58,Hollywood Road / Lucile Avenue,,3,https://itsmarta.com/58.aspx,A6CAF0,,Bus,0.146897800430768
+187,119590,15714,95,Metropolitan Parkway,,3,https://itsmarta.com/95.aspx,FF0000,,Bus,0.0929587912946632
+188,119591,15731,126,Embry Hills,,3,https://itsmarta.com/126.aspx,008000,,Bus,0.13263440435623
+189,119592,15739,150,Dunwoody Village,,3,https://itsmarta.com/150.aspx,00FFFF,,Bus,0.116998447903171
+190,119593,15772,809,Monroe Drive / Boulevard,,3,https://itsmarta.com/809.aspx,FF0000,,Bus,0.125078390278083
+191,119594,15687,40,Peachtree Street / Downtown,,3,https://itsmarta.com/40.aspx,FFFF00,,Bus,0.0829553598740027
+192,119595,15745,178,Empire Blvd / Southside Ind Park,,3,https://itsmarta.com/178.aspx,00FFFF,,Bus,0.0557686310976397
+193,119596,15753,191,Riverdale / ATL Intl Terminal,,3,https://itsmarta.com/191.aspx,FF00FF,,Bus,0.391486026394194
+194,119597,15757,195,Forest Parkway,,3,https://itsmarta.com/195.aspx,FF00FF,,Bus,0.273734457896636
+195,119598,15757,195,Forest Parkway,,3,https://itsmarta.com/195.aspx,FF00FF,,Bus,0.275537735532547
+196,119599,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+197,119600,15674,15,Candler Road,,3,https://itsmarta.com/15.aspx,00FF00,,Bus,0.143578771746319
+198,119601,15677,24,McAfee / Hosea Williams,,3,https://itsmarta.com/24.aspx,FF00FF,,Bus,0.216669448976105
+199,119602,15707,84,Washington Rd/Camp Crk Marketplace,,3,https://itsmarta.com/84.aspx,00FFFF,,Bus,0.140181404550076
+200,119603,15782,867,Peyton Forest / Dixie Hills,,3,https://itsmarta.com/867.aspx,00FFFF,,Bus,0.111415480117211
+201,119604,15693,55,Jonesboro Road,,3,https://itsmarta.com/55.aspx,FF8000,,Bus,0.226789657611778
+202,119605,15760,221,Memorial Drive Limited,,3,https://itsmarta.com/221.aspx,FF00FF,,Bus,0.116391595140581
+203,119606,15664,1,Marietta Blvd/Joseph E Lowery Blvd,,3,https://itsmarta.com/1.aspx,FF00FF,,Bus,0.116708400523286
+204,119607,15706,83,Campbellton Road,,3,https://itsmarta.com/83.aspx,00FF00,,Bus,0.103669258372148
+205,119608,15715,102,North Avenue / Little Five Points,,3,https://itsmarta.com/102.aspx,00FF00,,Bus,0.0727114504056663
+206,119609,15737,143,Windward Park & Ride,,3,https://itsmarta.com/143.aspx,00FFFF,,Bus,0.211331839530337
+207,119610,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+208,119611,15678,25,Peachtree Boulevard,,3,https://itsmarta.com/25.aspx,FF00FF,,Bus,0.103212125317512
+209,119612,15694,58,Hollywood Road / Lucile Avenue,,3,https://itsmarta.com/58.aspx,A6CAF0,,Bus,0.138976005169925
+210,119613,15740,153,James Jackson Parkway,,3,https://itsmarta.com/153.aspx,FF8000,,Bus,0.046738294718693
+211,119614,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+212,119615,15772,809,Monroe Drive / Boulevard,,3,https://itsmarta.com/809.aspx,FF0000,,Bus,0.127516743009682
+213,119616,15781,865,Boulder Park Drive,,3,https://itsmarta.com/865.aspx,00FF00,,Bus,0.0896112604044883
+214,119617,15707,84,Washington Rd/Camp Crk Marketplace,,3,https://itsmarta.com/84.aspx,00FFFF,,Bus,0.121407434985267
+215,119618,15708,85,Roswell,,3,https://itsmarta.com/85.aspx,008000,,Bus,0.163816708594136
+216,119619,15717,104,Winters Chapel Road,,3,https://itsmarta.com/104.aspx,00FFFF,,Bus,0.0708950649713688
+217,119620,15742,162,Myrtle Drive / Alison Court,,3,https://itsmarta.com/162.aspx,008080,,Bus,0.045766782295463
+218,119621,15750,186,Rainbow Drive / South DeKalb,,3,https://itsmarta.com/186.aspx,00FF00,,Bus,0.24433140636258
+219,119622,15782,867,Peyton Forest / Dixie Hills,,3,https://itsmarta.com/867.aspx,00FFFF,,Bus,0.108657754236484
+220,119623,15792,197,Southlake Parkway,,3,https://itsmarta.com/197.aspx,FF00FF,,Bus,0.199226906631182
+221,119624,15665,2,Ponce de Leon Avenue / Druid Hills,,3,https://itsmarta.com/2.aspx,008000,,Bus,0.0849956628992784
+222,119625,15749,185,Alpharetta,,3,https://itsmarta.com/185.aspx,FF8000,,Bus,0.247560036278077
+223,119626,15771,800,Lovejoy,,3,https://itsmarta.com/800.aspx,00FF00,,Bus,0.269754500819421
+224,119627,15698,71,Cascade Road,,3,https://itsmarta.com/71.aspx,FF8080,,Bus,0.137238881851862
+225,119628,15708,85,Roswell,,3,https://itsmarta.com/85.aspx,008000,,Bus,0.17035846771462
+226,119629,15716,103,Peeler Road,,3,https://itsmarta.com/103.aspx,00FFFF,,Bus,0.119023759667289
+227,119630,15781,865,Boulder Park Drive,,3,https://itsmarta.com/865.aspx,00FF00,,Bus,0.0221303729277615
+228,119631,15720,111,Snapfinger Woods,,3,https://itsmarta.com/111.aspx,008000,,Bus,0.303107587794014
+229,119632,15729,124,Pleasantdale Road,,3,https://itsmarta.com/124.aspx,FF00FF,,Bus,0.126433903532497
+230,119633,15737,143,Windward Park & Ride,,3,https://itsmarta.com/143.aspx,00FFFF,,Bus,0.189831479211783
+231,119634,15747,181,Washington Road / Fairburn,,3,https://itsmarta.com/181.aspx,FF8040,,Bus,0.254148339267946
+232,119635,15690,49,McDonough Boulevard,,3,https://itsmarta.com/49.aspx,FF8040,,Bus,0.125240587109362
+233,119636,15731,126,Embry Hills,,3,https://itsmarta.com/126.aspx,008000,,Bus,0.175483772910018
+234,119637,15749,185,Alpharetta,,3,https://itsmarta.com/185.aspx,FF8000,,Bus,0.242801149232324
+235,119638,15780,856,Baker Hills / Wilson Mill Meadows,,3,https://itsmarta.com/856.aspx,FF8040,,Bus,0.0156118784216902
+236,119639,15675,19,Clairmont Road / Howard Avenue,,3,https://itsmarta.com/19.aspx,FF00FF,,Bus,0.139585567614575
+237,119640,15685,37,Defoors Ferry Road,,3,https://itsmarta.com/37.aspx,00FF80,,Bus,0.104464048097103
+238,119641,15691,50,Donald Lee Hollowell Parkway,,3,https://itsmarta.com/50.aspx,00FF00,,Bus,0.136687578087883
+239,119642,15699,73,Fulton Industrial,,3,https://itsmarta.com/73.aspx,008000,,Bus,0.172674029769779
+240,119643,15719,110,Peachtree Road / Buckhead,,3,https://itsmarta.com/110.aspx,FF8040,,Bus,0.111543660709612
+241,119644,15753,191,Riverdale / ATL Intl Terminal,,3,https://itsmarta.com/191.aspx,FF00FF,,Bus,0.413415726327133
+242,119645,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.326159917274743
+243,119646,15778,850,Carroll Heights / Fairburn Heights,,3,https://itsmarta.com/850.aspx,FF00FF,,Bus,0.112104673305699
+244,119647,15669,6,Clifton Road / Emory,,3,https://itsmarta.com/6.aspx,008080,,Bus,0.0721828637551014
+245,119648,15677,24,McAfee / Hosea Williams,,3,https://itsmarta.com/24.aspx,FF00FF,,Bus,0.214964047338908
+246,119649,15714,95,Metropolitan Parkway,,3,https://itsmarta.com/95.aspx,FF0000,,Bus,0.112691107277833
+247,119650,15719,110,Peachtree Road / Buckhead,,3,https://itsmarta.com/110.aspx,FF8040,,Bus,0.115026336451475
+248,119651,15736,142,East Holcomb Bridge Road,,3,https://itsmarta.com/142.aspx,FF00FF,,Bus,0.114469397116195
+249,119652,15671,9,Boulevard / Tilson Road,,3,https://itsmarta.com/9.aspx,00FFFF,,Bus,0.17805752242781
+250,119653,15675,19,Clairmont Road / Howard Avenue,,3,https://itsmarta.com/19.aspx,FF00FF,,Bus,0.17133547942282
+251,119654,15683,34,Gresham Road,,3,https://itsmarta.com/34.aspx,FF00FF,,Bus,0.137418120554746
+252,119655,15686,39,Buford Highway,,3,https://itsmarta.com/39.aspx,008000,,Bus,0.135943027306492
+253,119656,15720,111,Snapfinger Woods,,3,https://itsmarta.com/111.aspx,008000,,Bus,0.206552107770896
+254,119657,15721,114,Columbia Drive,,3,https://itsmarta.com/114.aspx,FF8040,,Bus,0.132369635128205
+255,119658,15726,120,East Ponce De Leon Avenue,,3,https://itsmarta.com/120.aspx,FF00FF,,Bus,0.144581435680101
+256,119659,15743,165,Fairburn Road,,3,https://itsmarta.com/165.aspx,00FFFF,,Bus,0.118061945743872
+257,119660,15773,813,Atlanta University Center,,3,https://itsmarta.com/813.aspx,00FFFF,,Bus,0.0958868190721529
+258,119661,15670,8,North Druid Hills Road,,3,https://itsmarta.com/8.aspx,008000,,Bus,0.192520247920547
+259,119662,15673,14,14th Street / Blandtown,,3,https://itsmarta.com/14.aspx,00FF00,,Bus,0.0935531912639463
+260,119663,15679,26,Marietta Street / Perry Boulevard,,3,https://itsmarta.com/26.aspx,008080,,Bus,0.167418524658719
+261,119664,15683,34,Gresham Road,,3,https://itsmarta.com/34.aspx,FF00FF,,Bus,0.115953391668267
+262,119665,15718,107,Glenwood,,3,https://itsmarta.com/107.aspx,008000,,Bus,0.24297367776324
+263,119666,15727,121,Memorial Drive / N Hairston Road,,3,https://itsmarta.com/121.aspx,00FFFF,,Bus,0.144559864916255
+264,119667,15745,178,Empire Blvd / Southside Ind Park,,3,https://itsmarta.com/178.aspx,00FFFF,,Bus,0.0997797739393438
+265,119668,15747,181,Washington Road / Fairburn,,3,https://itsmarta.com/181.aspx,FF8040,,Bus,0.188304286016049
+266,119669,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+267,119670,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+268,119671,15688,42,Pryor Road,,3,https://itsmarta.com/42.aspx,FF8000,,Bus,0.140516571615014
+269,119672,15693,55,Jonesboro Road,,3,https://itsmarta.com/55.aspx,FF8000,,Bus,0.198065368461769
+270,119673,15694,58,Hollywood Road / Lucile Avenue,,3,https://itsmarta.com/58.aspx,A6CAF0,,Bus,0.149610802676937
+271,119674,15703,79,Sylvan Hills,,3,https://itsmarta.com/79.aspx,FF8000,,Bus,0.111127649333748
+272,119675,15733,133,Shallowford Road,,3,https://itsmarta.com/133.aspx,FFFF00,,Bus,0.0936395190904267
+273,119676,15747,181,Washington Road / Fairburn,,3,https://itsmarta.com/181.aspx,FF8040,,Bus,0.255958217498524
+274,119677,15748,183,Greenbriar,,3,https://itsmarta.com/183.aspx,008000,,Bus,0.0598284890702135
+275,119678,15718,107,Glenwood,,3,https://itsmarta.com/107.aspx,008000,,Bus,0.220379938760285
+276,119679,15748,183,Greenbriar,,3,https://itsmarta.com/183.aspx,008000,,Bus,0.163338190854406
+277,119680,15749,185,Alpharetta,,3,https://itsmarta.com/185.aspx,FF8000,,Bus,0.23503935456776
+278,119681,15756,194,Conley Road / Mt Zion,,3,https://itsmarta.com/194.aspx,008000,,Bus,0.351477500862876
+279,119682,15761,295,Metropolitan Campus Express,,3,https://itsmarta.com/295.aspx,008000,,Bus,0.0325801506511353
+280,119683,15671,9,Boulevard / Tilson Road,,3,https://itsmarta.com/9.aspx,00FFFF,,Bus,0.181513853344193
+281,119684,15717,104,Winters Chapel Road,,3,https://itsmarta.com/104.aspx,00FFFF,,Bus,0.0379313616030385
+282,119685,15732,132,Tilly Mill Road,,3,https://itsmarta.com/132.aspx,FF00FF,,Bus,0.0890284133743164
+283,119686,15738,148,Mount Vernon Highway,,3,https://itsmarta.com/148.aspx,00FF00,,Bus,0.112835061994761
+284,119687,15740,153,James Jackson Parkway,,3,https://itsmarta.com/153.aspx,FF8000,,Bus,0.0556828533271519
+285,119688,15752,189,Flat Shoals Road / Scofield Road,,3,https://itsmarta.com/189.aspx,FF00FF,,Bus,0.181093199309414
+286,119689,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+287,119690,15775,823,Belvedere,,3,https://itsmarta.com/823.aspx,00FF00,,Bus,0.0949316877285831
+288,119691,15683,34,Gresham Road,,3,https://itsmarta.com/34.aspx,FF00FF,,Bus,0.123410827388578
+289,119692,15692,51,Joseph E Boone Boulevard,,3,https://itsmarta.com/51.aspx,00FFFF,,Bus,0.110577352855631
+290,119693,15709,86,Fairington Road,,3,https://itsmarta.com/86.aspx,A6CAF0,,Bus,0.202210215650612
+291,119694,15739,150,Dunwoody Village,,3,https://itsmarta.com/150.aspx,00FFFF,,Bus,0.101174666485715
+292,119695,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+293,119696,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+294,119697,15777,832,Grant Park,,3,https://itsmarta.com/832.aspx,00FF00,,Bus,0.105024188036249
+295,119698,15667,4,Moreland Avenue,,3,https://itsmarta.com/4.aspx,FF00FF,,Bus,0.111151800795927
+296,119699,15697,68,Benjamin E Mays Drive,,3,https://itsmarta.com/68.aspx,FF0000,,Bus,0.189145303224642
+297,119700,15699,73,Fulton Industrial,,3,https://itsmarta.com/73.aspx,008000,,Bus,0.121874840142081
+298,119701,15710,87,Roswell Road / Sandy Springs,,3,https://itsmarta.com/87.aspx,00FFFF,,Bus,0.19418935760859
+299,119702,15725,119,Hairston Road / Stone Mtn Village,,3,https://itsmarta.com/119.aspx,008080,,Bus,0.165026699453291
+300,119703,15750,186,Rainbow Drive / South DeKalb,,3,https://itsmarta.com/186.aspx,00FF00,,Bus,0.220194822605127
+301,119704,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.282270632662525
+302,119705,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.317256090840695
+303,119706,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100212061526511
+304,119707,15664,1,Marietta Blvd/Joseph E Lowery Blvd,,3,https://itsmarta.com/1.aspx,FF00FF,,Bus,0.109909557060529
+305,119708,15665,2,Ponce de Leon Avenue / Druid Hills,,3,https://itsmarta.com/2.aspx,008000,,Bus,0.0846314002900364
+306,119709,15692,51,Joseph E Boone Boulevard,,3,https://itsmarta.com/51.aspx,00FFFF,,Bus,0.110625717218527
+307,119710,15723,116,Redan Road,,3,https://itsmarta.com/116.aspx,00FFFF,,Bus,0.197145656795107
+308,119711,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+309,119712,15782,867,Peyton Forest / Dixie Hills,,3,https://itsmarta.com/867.aspx,00FFFF,,Bus,0.120627769742761
+310,119713,15666,3,Martin Luther King Jr Dr/Auburn Ave,,3,https://itsmarta.com/3.aspx,FF8000,,Bus,0.117151529721992
+311,119714,15683,34,Gresham Road,,3,https://itsmarta.com/34.aspx,FF00FF,,Bus,0.137651352926308
+312,119715,15677,24,McAfee / Hosea Williams,,3,https://itsmarta.com/24.aspx,FF00FF,,Bus,0.23635698876839
+313,119716,15687,40,Peachtree Street / Downtown,,3,https://itsmarta.com/40.aspx,FFFF00,,Bus,0.084733741684075
+314,119717,15695,60,Hightower Road,,3,https://itsmarta.com/60.aspx,00FFFF,,Bus,0.0948065563860935
+315,119718,15716,103,Peeler Road,,3,https://itsmarta.com/103.aspx,00FFFF,,Bus,0.137289403722927
+316,119719,15709,86,Fairington Road,,3,https://itsmarta.com/86.aspx,A6CAF0,,Bus,0.246953797068558
+317,119720,15713,94,Northside Drive,,3,https://itsmarta.com/94.aspx,008000,,Bus,0.103661291216927
+318,119721,15772,809,Monroe Drive / Boulevard,,3,https://itsmarta.com/809.aspx,FF0000,,Bus,0.0903559128420221
+319,119722,15774,816,North Highland Avenue,,3,https://itsmarta.com/816.aspx,00FFFF,,Bus,0.127969011837241
+320,119723,15672,12,Howell Mill Road / Cumberland,,3,https://itsmarta.com/12.aspx,FF00FF,,Bus,0.137173751856679
+321,119724,15672,12,Howell Mill Road / Cumberland,,3,https://itsmarta.com/12.aspx,FF00FF,,Bus,0.175590390106908
+322,119725,15689,47,I-85 Access Road,,3,https://itsmarta.com/47.aspx,FF8080,,Bus,0.16344720337674
+323,119726,15697,68,Benjamin E Mays Drive,,3,https://itsmarta.com/68.aspx,FF0000,,Bus,0.0626981654204073
+324,119727,15704,81,Venetian Hills / Delowe Drive,,3,https://itsmarta.com/81.aspx,00FF00,,Bus,0.188247460891355
+325,119728,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.313995758791653
+326,119729,15758,196,Upper Riverdale / Southlake,,3,https://itsmarta.com/196.aspx,00FFFF,,Bus,0.248559540270656
+327,119730,15698,71,Cascade Road,,3,https://itsmarta.com/71.aspx,FF8080,,Bus,0.124495050228969
+328,119731,15721,114,Columbia Drive,,3,https://itsmarta.com/114.aspx,FF8040,,Bus,0.137428121339678
+329,119732,15747,181,Washington Road / Fairburn,,3,https://itsmarta.com/181.aspx,FF8040,,Bus,0.242464553837751
+330,119733,15753,191,Riverdale / ATL Intl Terminal,,3,https://itsmarta.com/191.aspx,FF00FF,,Bus,0.380336160213111
+331,119734,15711,89,Old National Highway,,3,https://itsmarta.com/89.aspx,FF8040,,Bus,0.204975297058756
+332,119735,15727,121,Memorial Drive / N Hairston Road,,3,https://itsmarta.com/121.aspx,00FFFF,,Bus,0.158085217940113
+333,119736,15730,125,Clarkston,,3,https://itsmarta.com/125.aspx,008000,,Bus,0.136777556169547
+334,119737,15730,125,Clarkston,,3,https://itsmarta.com/125.aspx,008000,,Bus,0.136460784597494
+335,119738,15785,ATLSC,Atlanta Streetcar,,0,https://itsmarta.com/Atlanta-Street-Car-Info.aspx,FF00FF,,"Tram, Streetcar, Light rail",0.0272423668847698
+336,119739,15676,21,Memorial Drive,,3,https://itsmarta.com/21.aspx,FF00FF,,Bus,0.0878188341860986
+337,119740,15694,58,Hollywood Road / Lucile Avenue,,3,https://itsmarta.com/58.aspx,A6CAF0,,Bus,0.141684106225919
+338,119741,15704,81,Venetian Hills / Delowe Drive,,3,https://itsmarta.com/81.aspx,00FF00,,Bus,0.184410345230942
+339,119742,15755,193,Morrow / Jonesboro,,3,https://itsmarta.com/193.aspx,008080,,Bus,0.346728966603484
+340,119743,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+341,119744,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.100928489290213
+342,119745,15760,221,Memorial Drive Limited,,3,https://itsmarta.com/221.aspx,FF00FF,,Bus,0.0862308206714103
+343,119746,15778,850,Carroll Heights / Fairburn Heights,,3,https://itsmarta.com/850.aspx,FF00FF,,Bus,0.0879618345414692
+344,119747,15668,5,Piedmont Road / Sandy Springs,,3,https://itsmarta.com/5.aspx,00FFFF,,Bus,0.151978273109345
+345,119748,15691,50,Donald Lee Hollowell Parkway,,3,https://itsmarta.com/50.aspx,00FF00,,Bus,0.132181165944208
+346,119749,15693,55,Jonesboro Road,,3,https://itsmarta.com/55.aspx,FF8000,,Bus,0.217200520116644
+347,119750,15705,82,Camp Creek / South Fulton Parkway,,3,https://itsmarta.com/82.aspx,008000,,Bus,0.0845556550707471
+348,119751,15712,93,Headland Drive / Main Street,,3,https://itsmarta.com/93.aspx,00FFFF,,Bus,0.146087393629491
+349,119752,15720,111,Snapfinger Woods,,3,https://itsmarta.com/111.aspx,008000,,Bus,0.29474743276815
+350,119753,15741,155,Pittsburgh,,3,https://itsmarta.com/155.aspx,00FFFF,,Bus,0.10342478665629
+351,119754,15679,26,Marietta Street / Perry Boulevard,,3,https://itsmarta.com/26.aspx,008080,,Bus,0.15736366979074
+352,119755,15697,68,Benjamin E Mays Drive,,3,https://itsmarta.com/68.aspx,FF0000,,Bus,0.179270228229482
+353,119756,15738,148,Mount Vernon Highway,,3,https://itsmarta.com/148.aspx,00FF00,,Bus,0.115698537551748
+354,119757,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+355,119758,15669,6,Clifton Road / Emory,,3,https://itsmarta.com/6.aspx,008080,,Bus,0.141948553405372
+356,119759,15672,12,Howell Mill Road / Cumberland,,3,https://itsmarta.com/12.aspx,FF00FF,,Bus,0.147962944911097
+357,119760,15691,50,Donald Lee Hollowell Parkway,,3,https://itsmarta.com/50.aspx,00FF00,,Bus,0.13112873679472
+358,119761,15699,73,Fulton Industrial,,3,https://itsmarta.com/73.aspx,008000,,Bus,0.177934197042291
+359,119762,15734,140,North Point Parkway,,3,https://itsmarta.com/140.aspx,FF8000,,Bus,0.203578420757634
+360,119763,15737,143,Windward Park & Ride,,3,https://itsmarta.com/143.aspx,00FFFF,,Bus,0.277978159506869
+361,119764,15792,197,Southlake Parkway,,3,https://itsmarta.com/197.aspx,FF00FF,,Bus,0.205733523676627
+362,119765,15667,4,Moreland Avenue,,3,https://itsmarta.com/4.aspx,FF00FF,,Bus,0.0981673490324845
+363,119766,15672,12,Howell Mill Road / Cumberland,,3,https://itsmarta.com/12.aspx,FF00FF,,Bus,0.16898657736663
+364,119767,15679,26,Marietta Street / Perry Boulevard,,3,https://itsmarta.com/26.aspx,008080,,Bus,0.156334238055886
+365,119768,15693,55,Jonesboro Road,,3,https://itsmarta.com/55.aspx,FF8000,,Bus,0.128339639050344
+366,119769,15699,73,Fulton Industrial,,3,https://itsmarta.com/73.aspx,008000,,Bus,0.189713461375851
+367,119770,15702,78,Cleveland Avenue,,3,https://itsmarta.com/78.aspx,00FF00,,Bus,0.0966728203101626
+368,119771,15721,114,Columbia Drive,,3,https://itsmarta.com/114.aspx,FF8040,,Bus,0.133961437565523
+369,119772,15752,189,Flat Shoals Road / Scofield Road,,3,https://itsmarta.com/189.aspx,FF00FF,,Bus,0.184349757282279
+370,119773,15759,201,Six Flags Over Georgia,,3,https://itsmarta.com/201.aspx,008000,,Bus,0.11298287682942
+371,119774,15698,71,Cascade Road,,3,https://itsmarta.com/71.aspx,FF8080,,Bus,0.123361878239666
+372,119775,15782,867,Peyton Forest / Dixie Hills,,3,https://itsmarta.com/867.aspx,00FFFF,,Bus,0.118624948381585
+373,95682,15787,BLUE,BLUE,,1,https://itsmarta.com/Blue-Line.aspx,0075B2,,"Subway, Metro",0.177076920163794
+374,95684,15787,BLUE,BLUE,,1,https://itsmarta.com/Blue-Line.aspx,0075B2,,"Subway, Metro",0.0820121143719613
+375,95686,15787,BLUE,BLUE,,1,https://itsmarta.com/Blue-Line.aspx,0075B2,,"Subway, Metro",0.254861592717215
+376,95689,15787,BLUE,BLUE,,1,https://itsmarta.com/Blue-Line.aspx,0075B2,,"Subway, Metro",0.0809905684199855
+377,95690,15787,BLUE,BLUE,,1,https://itsmarta.com/Blue-Line.aspx,0075B2,,"Subway, Metro",0.177291555725171
+378,95693,15787,BLUE,BLUE,,1,https://itsmarta.com/Blue-Line.aspx,0075B2,,"Subway, Metro",0.255518936819902
+379,95703,15788,GOLD,GOLD,,1,https://itsmarta.com/Green-Line.aspx,D4A723,,"Subway, Metro",0.345425392338245
+380,95711,15788,GOLD,GOLD,,1,https://itsmarta.com/Green-Line.aspx,D4A723,,"Subway, Metro",0.345425718263584
+381,95716,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.0369918340811923
+382,95718,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.0742635255053976
+383,95719,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.107270011040903
+384,95720,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.107270011040903
+385,95722,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.0392049755585089
+386,95724,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.0742635255053985
+387,95725,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.107270011040905
+388,95726,15789,GREEN,GREEN,,1,https://itsmarta.com/Green-Line.aspx,009D4B,,"Subway, Metro",0.107270011040905
+389,95728,15790,RED,RED,,1,https://itsmarta.com/Red-Line.aspx,CE242B,,"Subway, Metro",0.149305550716057
+390,95735,15790,RED,RED,,1,https://itsmarta.com/Red-Line.aspx,CE242B,,"Subway, Metro",0.367746900393096
+391,95738,15790,RED,RED,,1,https://itsmarta.com/Red-Line.aspx,CE242B,,"Subway, Metro",0.367471900393108
+392,95740,15790,RED,RED,,1,https://itsmarta.com/Red-Line.aspx,CE242B,,"Subway, Metro",0.151502824966289
+393,95743,15790,RED,RED,,1,https://itsmarta.com/Red-Line.aspx,CE242B,,"Subway, Metro",0.3677469003931
+394,95744,15790,RED,RED,,1,https://itsmarta.com/Red-Line.aspx,CE242B,,"Subway, Metro",0.3677469003931
