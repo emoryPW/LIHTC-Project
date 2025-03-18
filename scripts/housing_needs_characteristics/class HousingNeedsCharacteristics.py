@@ -48,7 +48,7 @@ class HousingNeedsCharacteristics:
         return score
 
 # Example Usage:
-census_tract_data = {"severe_housing_problem": 50}  # 50% severe housing problem
+census_tract_data = {"severe_housing_problem": 50}  # 50% of rental units occupied by 80% AMI and below households exhibit a “severe housing problem”
 county_data = {"ten_year_population_growth": True, "three_year_avg_growth_rate": 1.2, "employment_growth_rate": 1.5}
 stable_community_score = 5
 revitalization_score = 4
