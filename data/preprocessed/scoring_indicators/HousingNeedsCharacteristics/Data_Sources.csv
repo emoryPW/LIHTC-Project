@@ -1,0 +1,16 @@
+Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
+,,,,,
+,,,,,
+,Metric,Data provider,Table,Column in Table,Link
+,Population Growth,US Census Bureau,"ACS 5-Year Estimates, DP05",DP05_0001E,https://data.census.gov/
+,Employment Growth,US Bureau of Labor Statistics,Local Area Unemployment Statistics,,https://beta.bls.gov/
+,Severe Housing Problems*,HUD,"Table 2, Table 7","T2_est77, T2_est84, T2_est91, T7_est109, T7_est130, T7_est151",https://www.huduser.gov/portal/datasets/cp.html
+,,,,,
+,,,,,
+,*Severe Housing Problems Data,Description,,,
+,T2_est77,"Occupied rental housing units, has 1 or more of the 4 severe housing problems, is less than or equal to 30% of HAMFI",,,
+,T2_est84,"Occupied rental housing units, has 1 or more of the 4 severe housing problems, is greater than 30% but less than or equal to 50% of HAMFI",,,
+,T2_est91,"Occupied rental housing units, has 1 or more of the 4 severe housing problems, is greater than 50% but less than or equal to 80% of HAMFI",,,
+,T7_est109,"Occupied rental housing units, household income is less than or equal to 30% of HAMFI",,,
+,T7_est130,"Occupied rental housing units, household income is greater than 30% but less than or equal to 50% of HAMFI",,,
+,T7_est151,"Occupied rental housing units, household income is greater than 50% but less than or equal to 80% of HAMFI",,,
