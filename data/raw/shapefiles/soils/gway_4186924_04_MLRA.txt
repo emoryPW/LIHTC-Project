@@ -1,0 +1,100 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: USDA/NRCS - National Soil Survey Center
+      Title: National Coordinated Major Land Resource Area
+  Description:
+    Purpose: Major land resource areas (MLRAs) are geographically associated land resource units (LRUs). Identification of these large areas is important in statewide agricultural planning and has value in interstate, regional, and national planning. The dominant phys
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 2022
+  Status:
+    Progress: Complete
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -85.60517
+      East_Bounding_Coordinate: -80.78296
+      North_Bounding_Coordinate: 35.00131
+      South_Bounding_Coordinate: 30.35576
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: Standard for Geospatial Dataset File Naming
+      Theme_Keyword: MLRA, CRA
+    Place:
+      Place_Keyword_Thesaurus: GNIS
+      Place_Keyword: Georgia
+      Place_Keyword: *
+  Use_Constraints:
+
+    The U.S. Department of Agriculture, Service Center Agencies should be acknowledged as the data source in products derived from these data.
+
+    This data set is not designed for use as a primary regulatory tool in permitting or citing decisions, but may be used as a reference source.  This information may be interpreted by organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application.  Federal, State, or local regulatory bodies are not to reassign to the Service Center Agencies any authority for the decisions that they make.  The Service Center Agencies will not perform any evaluations of these data for purposes related solely to State or local regulatory programs.
+
+    Photographic or digital enlargement of these data to scales greater than at which they were originally mapped can cause misinterpretation of the data.  Digital data files are periodically updated, and users are responsible for obtaining the latest version of the data.
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: National Soil Survey Center
+      Contact_Address:
+        Address: 100 Centennial Mall North, Mail Stop 33
+        City: Lincoln
+        State_or_Province: Nebraska
+        Postal_Code: 68508-3866
+Data_Quality_Information:
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator:
+            National Soil Survey Center
+          Publication_Date: 2022
+          Title: Major Land Resource Area (MLRA) Version 5.2
+      Source_Scale_Denominator: 250,000
+    Process_Step:
+      Process_Description: First, the MLRA_V5.2 layer was retrieved from https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_053624. Then the it was loaded into SDE and the FIPS_C attribute was added.
+      Process_Date: 202205
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Planar:
+      Grid_Coordinate_System:
+        Grid_Coordinate_System_Name: Universal Transverse Mercator
+        Universal_Transverse_Mercator:
+          UTM_Zone_Number: 17
+          Transverse_Mercator:
+            Scale_Factor_at_Central_Meridian: 0.9996
+            Longitude_of_Central_Meridian: -81
+            Latitude_of_Projection_Origin: 0.0
+            False_Easting: 500000.0
+            False_Northing: 0.0
+    Geodetic_Model:
+      Horizontal_Datum_Name: North American Datum of 1983 (NAD83)
+      Ellipsoid_Name: GRS1980
+      Semi-major_Axis: 6378137.0
+      Denominator_of_Flattening_Ratio: 298.257222101
+Entity_and_Attribute_Information:
+  Overview_Description:
+    Entity_and_Attribute_Overview:
+      Attributes in the map identify the MLRA, symbology and locational FIPS code.
+    Entity_and_Attribute_Detail_Citation: Relevant attributes are:
+MLRA_ID - Major Land Resource Area numeric sequence code.
+MLRA_NAME - Major Land Resource Area Name.
+MLRARSYM - Major Land Resource Area Symbol.
+LRRSYM - Land Resource Region Symbol 
+LRR_NAME - Land Resource Region Name
+ST - State FIPS Code
+FIPS_C - State FIPS code that the feature is inside of or crossing
+Distribution_Information:
+  Distribution_Liability:
+
+    Although these data have been processed successfully on a computer system at the U.S. Department of Agriculture, no warranty expressed or implied is made by the Service Center Agencies regarding the utility of the data on any other system, nor shall the act of distribution constitute any such warranty.  The U.S. Department of Agriculture will warrant the delivery of this product in computer readable format, and will offer appropriate adjustment of credit when the product is determined unreadable by correctly adjusted computer input peripherals, or when the physical medium is delivered in damaged condition.  Request for adjustment of credit must be made within 90 days from the date of this shipment from the ordering site.
+
+    Neither the U.S. Department of Agriculture, nor any of its agencies are liable for misuse of the data, for damage, for transmission of viruses, or for computer contamination through the distribution of these data sets.  The U.S. Department of Agriculture prohibits discrimination in all its programs and activities on the basis of race, color, national origin, sex, religion, age, disability, political beliefs, sexual orientation, or marital or family status. (Not all prohibited bases apply to all programs.)
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: ARC/INFO Shape
+Metadata_Reference_Information:
+  Metadata_Date: 03/27/2025
+  Metadata_Standard_Name: SCI Minimum Compliance Metadata
+  Metadata_Standard_Version: SCI Std 003-02
