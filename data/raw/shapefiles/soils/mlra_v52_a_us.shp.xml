@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdb:MD_Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/1.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/1.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/1.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/1.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/1.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/1.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqc="http://standards.iso.org/iso/19157/-2/dqc/1.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mdb:metadataIdentifier>
+<mcc:MD_Identifier>
+<mcc:code>
+<gco:CharacterString>3F69EB4E-515F-4054-94DC-203BCAEFE2CD</gco:CharacterString>
+</mcc:code>
+</mcc:MD_Identifier>
+</mdb:metadataIdentifier>
+<mdb:defaultLocale>
+<lan:PT_Locale>
+<lan:language>
+<lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng">eng</lan:LanguageCode>
+</lan:language>
+<lan:country>
+<lan:CountryCode codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US">US</lan:CountryCode>
+</lan:country>
+<lan:characterEncoding>
+<lan:MD_CharacterSetCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+</lan:characterEncoding>
+</lan:PT_Locale>
+</mdb:defaultLocale>
+<mdb:metadataScope>
+<mdb:MD_MetadataScope>
+<mdb:resourceScope>
+<mcc:MD_ScopeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+</mdb:resourceScope>
+</mdb:MD_MetadataScope>
+</mdb:metadataScope>
+<mdb:contact>
+<cit:CI_Responsibility>
+<cit:role>
+<cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
+</cit:role>
+<cit:party>
+<cit:CI_Organisation>
+<cit:name>
+<gco:CharacterString>National Soil Survey Center</gco:CharacterString>
+</cit:name>
+<cit:contactInfo>
+<cit:CI_Contact>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5499</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>1-800-833-7352</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5378</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5379</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:address>
+<cit:CI_Address>
+<cit:deliveryPoint>
+<gco:CharacterString>1121 Lincoln Mall, Suite 230</gco:CharacterString>
+</cit:deliveryPoint>
+<cit:city>
+<gco:CharacterString>Lincoln</gco:CharacterString>
+</cit:city>
+<cit:administrativeArea>
+<gco:CharacterString>NE</gco:CharacterString>
+</cit:administrativeArea>
+<cit:postalCode>
+<gco:CharacterString>68508-3866</gco:CharacterString>
+</cit:postalCode>
+<cit:electronicMailAddress>
+<gco:CharacterString>soilshotline@usda.gov</gco:CharacterString>
+</cit:electronicMailAddress>
+</cit:CI_Address>
+</cit:address>
+</cit:CI_Contact>
+</cit:contactInfo>
+<cit:individual>
+<cit:CI_Individual>
+<cit:name>
+<gco:CharacterString>Soils Hotline</gco:CharacterString>
+</cit:name>
+</cit:CI_Individual>
+</cit:individual>
+</cit:CI_Organisation>
+</cit:party>
+</cit:CI_Responsibility>
+</mdb:contact>
+<mdb:dateInfo>
+<cit:CI_Date>
+<cit:date>
+<gco:DateTime>2025-01-03T00:00:00</gco:DateTime>
+</cit:date>
+<cit:dateType>
+<cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+</cit:dateType>
+</cit:CI_Date>
+</mdb:dateInfo>
+<mdb:metadataStandard>
+<cit:CI_Citation>
+<cit:title>
+<gco:CharacterString>ISO 19115-3 Geographic Information - Metadata - Part 1: Fundamentals</gco:CharacterString>
+</cit:title>
+<cit:edition>
+<gco:CharacterString>2014</gco:CharacterString>
+</cit:edition>
+</cit:CI_Citation>
+</mdb:metadataStandard>
+<mdb:spatialRepresentationInfo>
+<msr:MD_VectorSpatialRepresentation>
+<msr:topologyLevel>
+<msr:MD_TopologyLevelCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly">geometryOnly</msr:MD_TopologyLevelCode>
+</msr:topologyLevel>
+<msr:geometricObjects>
+<msr:MD_GeometricObjects>
+<msr:geometricObjectType>
+<msr:MD_GeometricObjectTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite">composite</msr:MD_GeometricObjectTypeCode>
+</msr:geometricObjectType>
+<msr:geometricObjectCount>
+<gco:Integer>267</gco:Integer>
+</msr:geometricObjectCount>
+</msr:MD_GeometricObjects>
+</msr:geometricObjects>
+</msr:MD_VectorSpatialRepresentation>
+</mdb:spatialRepresentationInfo>
+<mdb:referenceSystemInfo>
+<mrs:MD_ReferenceSystem>
+<mrs:referenceSystemIdentifier>
+<mcc:MD_Identifier>
+<mcc:code>
+<gco:CharacterString>4326</gco:CharacterString>
+</mcc:code>
+<mcc:codeSpace>
+<gco:CharacterString>EPSG</gco:CharacterString>
+</mcc:codeSpace>
+<mcc:version>
+<gco:CharacterString>6.14(3.0.1)</gco:CharacterString>
+</mcc:version>
+</mcc:MD_Identifier>
+</mrs:referenceSystemIdentifier>
+</mrs:MD_ReferenceSystem>
+</mdb:referenceSystemInfo>
+<mdb:identificationInfo>
+<mri:MD_DataIdentification>
+<mri:citation>
+<cit:CI_Citation>
+<cit:title>
+<gco:CharacterString>Major Land Resource Areas (MLRA)</gco:CharacterString>
+</cit:title>
+<cit:alternateTitle>
+<gco:CharacterString>Agricultural Handbook 296</gco:CharacterString>
+</cit:alternateTitle>
+<cit:date>
+<cit:CI_Date>
+<cit:date>
+<gco:DateTime>2022-05-11T00:00:00</gco:DateTime>
+</cit:date>
+<cit:dateType>
+<cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+</cit:dateType>
+</cit:CI_Date>
+</cit:date>
+<cit:edition>
+<gco:CharacterString>Version 5.2</gco:CharacterString>
+</cit:edition>
+<cit:citedResponsibleParty>
+<cit:CI_Responsibility>
+<cit:role>
+<cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="originator">originator</cit:CI_RoleCode>
+</cit:role>
+<cit:party>
+<cit:CI_Organisation>
+<cit:name>
+<gco:CharacterString>United States Department of Agriculture, Natural Resources Conservation Service</gco:CharacterString>
+</cit:name>
+<cit:contactInfo>
+<cit:CI_Contact>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5499</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>1-800-833-7352</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5378</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5379</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:address>
+<cit:CI_Address>
+<cit:deliveryPoint>
+<gco:CharacterString>NSSC Center 1121 Lincoln Mall, Suite 230</gco:CharacterString>
+</cit:deliveryPoint>
+<cit:city>
+<gco:CharacterString>Lincoln</gco:CharacterString>
+</cit:city>
+<cit:administrativeArea>
+<gco:CharacterString>Nebraska</gco:CharacterString>
+</cit:administrativeArea>
+<cit:postalCode>
+<gco:CharacterString>68508-3866</gco:CharacterString>
+</cit:postalCode>
+<cit:country>
+<lan:CountryCode codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US">US</lan:CountryCode>
+</cit:country>
+</cit:CI_Address>
+</cit:address>
+</cit:CI_Contact>
+</cit:contactInfo>
+</cit:CI_Organisation>
+</cit:party>
+</cit:CI_Responsibility>
+</cit:citedResponsibleParty>
+<cit:citedResponsibleParty>
+<cit:CI_Responsibility>
+<cit:role>
+<cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
+</cit:role>
+<cit:party>
+<cit:CI_Organisation>
+<cit:name>
+<gco:CharacterString>U.S. Department of Agriculture, Natural Resources Conservation Service, National Soil Survey Center</gco:CharacterString>
+</cit:name>
+<cit:contactInfo>
+<cit:CI_Contact>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5499</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>1-800-833-7352</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5378</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5379</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:address>
+<cit:CI_Address>
+<cit:deliveryPoint>
+<gco:CharacterString>1121 Lincoln Mall, Suite 230</gco:CharacterString>
+</cit:deliveryPoint>
+<cit:city>
+<gco:CharacterString>Lincoln</gco:CharacterString>
+</cit:city>
+<cit:administrativeArea>
+<gco:CharacterString>NE</gco:CharacterString>
+</cit:administrativeArea>
+<cit:postalCode>
+<gco:CharacterString>68508-3866</gco:CharacterString>
+</cit:postalCode>
+<cit:electronicMailAddress>
+<gco:CharacterString>soilshotline@usda.gov</gco:CharacterString>
+</cit:electronicMailAddress>
+</cit:CI_Address>
+</cit:address>
+</cit:CI_Contact>
+</cit:contactInfo>
+<cit:individual>
+<cit:CI_Individual>
+<cit:name>
+<gco:CharacterString>Soils Hotline</gco:CharacterString>
+</cit:name>
+</cit:CI_Individual>
+</cit:individual>
+</cit:CI_Organisation>
+</cit:party>
+</cit:CI_Responsibility>
+</cit:citedResponsibleParty>
+<cit:citedResponsibleParty>
+<cit:CI_Responsibility>
+<cit:role>
+<cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
+</cit:role>
+<cit:party>
+<cit:CI_Organisation>
+<cit:name>
+<gco:CharacterString>U.S. Department of Agriculture, Natural Resources Conservation Service, National Soil Survey Center</gco:CharacterString>
+</cit:name>
+<cit:contactInfo>
+<cit:CI_Contact>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5499</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>1-800-833-7352</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5378</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5379</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:address>
+<cit:CI_Address>
+<cit:deliveryPoint>
+<gco:CharacterString>1121 Lincoln Mall, Suite 230</gco:CharacterString>
+</cit:deliveryPoint>
+<cit:city>
+<gco:CharacterString>Lincoln</gco:CharacterString>
+</cit:city>
+<cit:administrativeArea>
+<gco:CharacterString>NE</gco:CharacterString>
+</cit:administrativeArea>
+<cit:postalCode>
+<gco:CharacterString>68508-3866</gco:CharacterString>
+</cit:postalCode>
+<cit:electronicMailAddress>
+<gco:CharacterString>soilshotline@usda.gov</gco:CharacterString>
+</cit:electronicMailAddress>
+</cit:CI_Address>
+</cit:address>
+</cit:CI_Contact>
+</cit:contactInfo>
+<cit:individual>
+<cit:CI_Individual>
+<cit:name>
+<gco:CharacterString>Soils Hotline</gco:CharacterString>
+</cit:name>
+</cit:CI_Individual>
+</cit:individual>
+</cit:CI_Organisation>
+</cit:party>
+</cit:CI_Responsibility>
+</cit:citedResponsibleParty>
+<cit:presentationForm>
+<cit:CI_PresentationFormCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_PresentationFormCode" codeListValue="documentDigital">documentDigital</cit:CI_PresentationFormCode>
+</cit:presentationForm>
+<cit:series>
+<cit:CI_Series>
+<cit:name>
+<gco:CharacterString>Agriculture Handbook</gco:CharacterString>
+</cit:name>
+<cit:issueIdentification>
+<gco:CharacterString>296</gco:CharacterString>
+</cit:issueIdentification>
+<cit:page>
+<gco:CharacterString>660</gco:CharacterString>
+</cit:page>
+</cit:CI_Series>
+</cit:series>
+<cit:otherCitationDetails>
+<gco:CharacterString>USDA, Natural Resources Conservation Service. (2022). Land resource regions and major land resource areas of the United States, the Caribbean, and the Pacific Basin. U.S. Department of Agriculture, Agriculture Handbook 296.  MLRA Geographic Database - digital maps and attributes.</gco:CharacterString>
+</cit:otherCitationDetails>
+<cit:onlineResource>
+<cit:CI_OnlineResource>
+<cit:linkage>
+<gco:CharacterString>https://www.nrcs.usda.gov/resources/data-and-reports/major-land-resource-area-mlra</gco:CharacterString>
+</cit:linkage>
+<cit:name>
+<gco:CharacterString>Landing page</gco:CharacterString>
+</cit:name>
+<cit:function>
+<cit:CI_OnLineFunctionCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</cit:CI_OnLineFunctionCode>
+</cit:function>
+</cit:CI_OnlineResource>
+</cit:onlineResource>
+</cit:CI_Citation>
+</mri:citation>
+<mri:abstract>
+<gco:CharacterString>Land resource areas are used in the United States, Caribbean, and Pacific Basin. The “Major Land Resource Areas (MLRA) Geographic Database” serves as the geospatial expression of the map products presented and described in AH 296 (2022). Land resource categories historically used at State and National levels are land resource units, major land resource areas, and land resource regions (National Soil Survey Handbook, Part 649; Land Resource Hierarchy). Although AH 296 does not describe land resource units (LRUs) directly, they are the basic units from which major land resource areas are determined. They are also the basic units for State land resource maps. LRUs are commonly, but not necessarily, coextensive with State general soil map units. LRUs generally are several thousand acres in size. A unit can be one continuous area or several separate areas that are near each other. In 2005, these areas were designated as common resource areas (CRAs) within the NRCS. Like LRUs, CRAs are not described in AH 296 and are not shown on the National map but are mentioned for historical purposes. MLRAs are geographically associated LRUs at a broader scale and higher hierarchical level than LRUs. Land resource regions (LRR) are a group of geographically associated MLRAs at the highest hierarchical level shown at the continental scale. Identification of these large areas is important in statewide agricultural planning and has value in interstate, regional, and national planning. In AH 296, MLRAs are generally designated by numbers and identified by a descriptive geographic name. Examples are MLRA 1 (Northern Pacific Coast Range, Foothills, and Valleys), MLRA 154 (South-Central Florida Ridge), and MLRA 230 (Yukon-Kuskokwim Highlands). Some MLRAs are designated by a letter in addition to a number because a previously established MLRA has been divided into smaller, more homogeneous areas—for example, MLRAs 102A, 102B, and 102C. Other MLRAs, especially smaller ones approaching the LRU scale, have been recombined. The use of numbers and letters to identify newly created MLRAs requires fewer changes in existing information in records and in databases. A few MLRAs consist of two or more parts separated for short distances by other land resource areas. In some places, one of the parts is widely separated from the main body of the MLRA and is in an adjoining LRR. The description of the respective MLRA also applies to these outlying parts. The spatial illustration of the MLRAs has been smoothed for the contiguous United States and Alaska to better reflect the scale at which the MLRA resource attributes (climate, soils, land use, vegetation, geology, and physiography) were aggregated for delineation.</gco:CharacterString>
+</mri:abstract>
+<mri:purpose>
+<gco:CharacterString>The "MLRA Geographic Database" was prepared for "Agriculture Handbook 296" (AH 296) re-publication and is used to support decisions about regional and national agricultural issues. The database and AH 296 help identify the need for research and resource inventories. The handbook serves as the vehicle for extrapolating the results of research across political boundaries and is the basis for organizing and operating natural resource conservation programs. Today, U.S. Department of Agriculture (USDA) soil survey offices are organized to serve groups of the major land resource areas defined in the handbook. The handbook was first published in 1965 as an expansion of the 1950 map entitled “Problem Areas in Soil Conservation”.  It was designed primarily for use by the Soil Conservation Service, what is now the Natural Resources Conservation Service (NRCS). The handbook was updated in 1978, and the second edition was printed in 1981. The third edition was published in 2006, and the fourth edition was published in 2022.</gco:CharacterString>
+</mri:purpose>
+<mri:credit>
+<gco:CharacterString>U.S. Department of Agriculture, Natural Resources Conservation Service. (2022). Land resource regions and major land resource areas of the United States, the Caribbean, and the Pacific Basin. U.S. Department of Agriculture, Agriculture Handbook 296.  https://www.nrcs.usda.gov/resources/data-and-reports/major-land-resource-area-mlra (accessed 3 January 2025).
+
+</gco:CharacterString>
+</mri:credit>
+<mri:status>
+<mcc:MD_ProgressCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
+</mri:status>
+<mri:pointOfContact>
+<cit:CI_Responsibility>
+<cit:role>
+<cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
+</cit:role>
+<cit:party>
+<cit:CI_Organisation>
+<cit:name>
+<gco:CharacterString>National Soil Survey Center</gco:CharacterString>
+</cit:name>
+<cit:contactInfo>
+<cit:CI_Contact>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5499</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>1-800-833-7352</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5378</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:phone>
+<cit:CI_Telephone>
+<cit:number>
+<gco:CharacterString>402-437-5379</gco:CharacterString>
+</cit:number>
+<cit:numberType>
+<cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+</cit:numberType>
+</cit:CI_Telephone>
+</cit:phone>
+<cit:address>
+<cit:CI_Address>
+<cit:deliveryPoint>
+<gco:CharacterString>1121 Lincoln Mall, Suite 230</gco:CharacterString>
+</cit:deliveryPoint>
+<cit:city>
+<gco:CharacterString>Lincoln</gco:CharacterString>
+</cit:city>
+<cit:administrativeArea>
+<gco:CharacterString>NE</gco:CharacterString>
+</cit:administrativeArea>
+<cit:postalCode>
+<gco:CharacterString>68508-3866</gco:CharacterString>
+</cit:postalCode>
+<cit:country>
+<lan:CountryCode codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US">US</lan:CountryCode>
+</cit:country>
+<cit:electronicMailAddress>
+<gco:CharacterString>soilshotline@usda.gov</gco:CharacterString>
+</cit:electronicMailAddress>
+</cit:CI_Address>
+</cit:address>
+</cit:CI_Contact>
+</cit:contactInfo>
+<cit:individual>
+<cit:CI_Individual>
+<cit:name>
+<gco:CharacterString>Soils Hotline</gco:CharacterString>
+</cit:name>
+</cit:CI_Individual>
+</cit:individual>
+</cit:CI_Organisation>
+</cit:party>
+</cit:CI_Responsibility>
+</mri:pointOfContact>
+<mri:spatialRepresentationType>
+<mcc:MD_SpatialRepresentationTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
+</mri:spatialRepresentationType>
+<mri:spatialResolution>
+<mri:MD_Resolution>
+<mri:equivalentScale>
+<mri:MD_RepresentativeFraction>
+<mri:denominator>
+<gco:Integer>7500000</gco:Integer>
+</mri:denominator>
+</mri:MD_RepresentativeFraction>
+</mri:equivalentScale>
+</mri:MD_Resolution>
+</mri:spatialResolution>
+<mri:spatialResolution>
+<mri:MD_Resolution>
+<mri:equivalentScale>
+<mri:MD_RepresentativeFraction>
+<mri:denominator>
+<gco:Integer>5000000</gco:Integer>
+</mri:denominator>
+</mri:MD_RepresentativeFraction>
+</mri:equivalentScale>
+</mri:MD_Resolution>
+</mri:spatialResolution>
+<mri:topicCategory>
+<mri:MD_TopicCategoryCode>farming</mri:MD_TopicCategoryCode>
+</mri:topicCategory>
+<mri:topicCategory>
+<mri:MD_TopicCategoryCode>environment</mri:MD_TopicCategoryCode>
+</mri:topicCategory>
+<mri:extent>
+<gex:EX_Extent>
+<gex:description>
+<gco:CharacterString>This record was originally published in 1965 and was revised in 1981, 2006, and 2021. Earlier versions can be found in the 1938 and 1957 USDA Yearbooks of Agriculture. </gco:CharacterString>
+</gex:description>
+<gex:geographicElement>
+<gex:EX_GeographicBoundingBox>
+<gex:extentTypeCode>
+<gco:Boolean>true</gco:Boolean>
+</gex:extentTypeCode>
+<gex:westBoundLongitude>
+<gco:Decimal>-179.147355</gco:Decimal>
+</gex:westBoundLongitude>
+<gex:eastBoundLongitude>
+<gco:Decimal>179.778455</gco:Decimal>
+</gex:eastBoundLongitude>
+<gex:southBoundLatitude>
+<gco:Decimal>-14.373855</gco:Decimal>
+</gex:southBoundLatitude>
+<gex:northBoundLatitude>
+<gco:Decimal>71.352561</gco:Decimal>
+</gex:northBoundLatitude>
+</gex:EX_GeographicBoundingBox>
+</gex:geographicElement>
+<gex:temporalElement>
+<gex:EX_TemporalExtent>
+<gex:extent>
+<gml:TimeInstant>
+<gml:timePosition>2022-05-11T00:00:00</gml:timePosition>
+</gml:TimeInstant>
+</gex:extent>
+</gex:EX_TemporalExtent>
+</gex:temporalElement>
+</gex:EX_Extent>
+</mri:extent>
+<mri:resourceMaintenance>
+<mmi:MD_MaintenanceInformation>
+<mmi:maintenanceAndUpdateFrequency>
+<mmi:MD_MaintenanceFrequencyCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</mmi:MD_MaintenanceFrequencyCode>
+</mmi:maintenanceAndUpdateFrequency>
+</mmi:MD_MaintenanceInformation>
+</mri:resourceMaintenance>
+<mri:descriptiveKeywords>
+<mri:MD_Keywords>
+<mri:keyword>
+<gco:CharacterString>The United States of America</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Puerto Rico</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>United States Virgin Islands</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Republic of Palau</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Republic of the Marshall Islands</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Territory of American Samoa</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Territory of Guam</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Federated States of Micronesia</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>Commonwealth of Northern Mariana Islands (USA)</gco:CharacterString>
+</mri:keyword>
+<mri:type>
+<mri:MD_KeywordTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#napMD_KeywordTypeCode" codeListValue="place">place</mri:MD_KeywordTypeCode>
+</mri:type>
+</mri:MD_Keywords>
+</mri:descriptiveKeywords>
+<mri:descriptiveKeywords>
+<mri:MD_Keywords>
+<mri:keyword>
+<gco:CharacterString>2022</gco:CharacterString>
+</mri:keyword>
+<mri:type>
+<mri:MD_KeywordTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#napMD_KeywordTypeCode" codeListValue="temporal">temporal</mri:MD_KeywordTypeCode>
+</mri:type>
+</mri:MD_Keywords>
+</mri:descriptiveKeywords>
+<mri:descriptiveKeywords>
+<mri:MD_Keywords>
+<mri:keyword>
+<gco:CharacterString>LRR</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>LRU</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>MLRA</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>NCSS</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>NGDA</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>NRCS</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>physiography</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>soil survey</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>soils</gco:CharacterString>
+</mri:keyword>
+<mri:keyword>
+<gco:CharacterString>USDA</gco:CharacterString>
+</mri:keyword>
+<mri:type>
+<mri:MD_KeywordTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#napMD_KeywordTypeCode" codeListValue="theme">theme</mri:MD_KeywordTypeCode>
+</mri:type>
+</mri:MD_Keywords>
+</mri:descriptiveKeywords>
+<mri:descriptiveKeywords>
+<mri:MD_Keywords>
+<mri:keyword>
+<gco:CharacterString>Other Documents</gco:CharacterString>
+</mri:keyword>
+<mri:thesaurusName uuidref="723f6998-058e-11dc-8314-0800200c9a66">
+</mri:thesaurusName>
+</mri:MD_Keywords>
+</mri:descriptiveKeywords>
+<mri:resourceConstraints>
+<mco:MD_Constraints>
+<mco:useLimitation>
+<gco:CharacterString>These data have a scale dependency use constraint and should not be applied at map scales generally larger than 3,500,000. Original compilation scales included 1:250,000 USGS base maps for the Conterminous United States and 1:1,000,000 USGS base maps for Alaska.</gco:CharacterString>
+</mco:useLimitation>
+</mco:MD_Constraints>
+</mri:resourceConstraints>
+<mri:defaultLocale>
+<lan:PT_Locale>
+<lan:language>
+<lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng">eng</lan:LanguageCode>
+</lan:language>
+<lan:country>
+<lan:CountryCode codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US">US</lan:CountryCode>
+</lan:country>
+<lan:characterEncoding>
+<lan:MD_CharacterSetCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+</lan:characterEncoding>
+</lan:PT_Locale>
+</mri:defaultLocale>
+<mri:environmentDescription>
+<gco:CharacterString> Version 6.2 (Build 9200) ; Esri ArcGIS 10.7.1.11595</gco:CharacterString>
+</mri:environmentDescription>
+</mri:MD_DataIdentification>
+</mdb:identificationInfo>
+<mdb:distributionInfo>
+<mrd:MD_Distribution>
+<mrd:distributionFormat>
+<mrd:MD_Format>
+<mrd:formatSpecificationCitation>
+<cit:CI_Citation>
+<cit:title>
+<gco:CharacterString>ESRI Shapefile</gco:CharacterString>
+</cit:title>
+<cit:edition>
+<gco:CharacterString>5.2</gco:CharacterString>
+</cit:edition>
+</cit:CI_Citation>
+</mrd:formatSpecificationCitation>
+</mrd:MD_Format>
+</mrd:distributionFormat>
+<mrd:transferOptions>
+<mrd:MD_DigitalTransferOptions>
+<mrd:unitsOfDistribution>
+<gco:CharacterString>MB</gco:CharacterString>
+</mrd:unitsOfDistribution>
+<mrd:transferSize>
+<gco:Real>5.2</gco:Real>
+</mrd:transferSize>
+<mrd:onLine>
+<cit:CI_OnlineResource>
+<cit:linkage>
+<gco:CharacterString>https://www.nrcs.usda.gov/resources/data-and-reports/major-land-resource-area-mlra</gco:CharacterString>
+</cit:linkage>
+<cit:name>
+<gco:CharacterString>Landing page</gco:CharacterString>
+</cit:name>
+<cit:function>
+<cit:CI_OnLineFunctionCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</cit:CI_OnLineFunctionCode>
+</cit:function>
+</cit:CI_OnlineResource>
+</mrd:onLine>
+</mrd:MD_DigitalTransferOptions>
+</mrd:transferOptions>
+</mrd:MD_Distribution>
+</mdb:distributionInfo>
+<mdb:dataQualityInfo>
+<mdq:DQ_DataQuality>
+<mdq:scope>
+<mcc:MD_Scope>
+<mcc:level>
+<mcc:MD_ScopeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ScopeCode" codeListValue="feature">feature</mcc:MD_ScopeCode>
+</mcc:level>
+</mcc:MD_Scope>
+</mdq:scope>
+<mdq:report>
+<mdq:DQ_RelativeInternalPositionalAccuracy>
+<mdq:result>
+<mdq:DQ_ConformanceResult>
+<mdq:specification>
+<cit:CI_Citation>
+<cit:title>
+<gco:CharacterString>Scale</gco:CharacterString>
+</cit:title>
+</cit:CI_Citation>
+</mdq:specification>
+<mdq:explanation>
+<gco:CharacterString>(1) Land Resource Regions
+LRRs are delineated on national maps at small scales—1:7,500,000 for the conterminous United States and 1:10,000,000 for Alaska. These maps are most useful for national program planning. For maps at a scale of 1:7,500,000, the delineation of the minimum mappable area is approximately 1 cm by 1 cm (0.4 inch by 0.4 inch), or about 560,000 hectares (1,400,000 acres). 
+
+(2) Major Land Resource Areas (MLRAs) are delineated on national maps at small scales—1:5,000,000 for the conterminous United States and the Pacific and Caribbean Islands and 1:7,500,000 for Alaska. These maps are most useful for national, regional, and State program planning. The delineation of the minimum mappable area is approximately 1 cm by 1 cm (0.4 inch by 0.4 inch), or about 250,000 hectares (620,000 acres). Minimum linear delineations are at least 0.3 cm (0.1 inch) in width and 2.5 cm (1 inch) in length. (Note: The Pacific and Caribbean Islands, which have land areas less than 600,000 hectares, or 1,600,000 acres, in size are excluded from the minimum delineation rule due to individual island sizes and distribution.)</gco:CharacterString>
+</mdq:explanation>
+<mdq:pass>
+<gco:Boolean>true</gco:Boolean>
+</mdq:pass>
+</mdq:DQ_ConformanceResult>
+</mdq:result>
+</mdq:DQ_RelativeInternalPositionalAccuracy>
+</mdq:report>
+</mdq:DQ_DataQuality>
+</mdb:dataQualityInfo>
+<mdb:resourceLineage>
+<mrl:LI_Lineage>
+<mrl:statement>
+<gco:CharacterString>The 2006 version served as the reference point for the new 2021 version.</gco:CharacterString>
+</mrl:statement>
+<mrl:scope>
+<mcc:MD_Scope>
+<mcc:level>
+<mcc:MD_ScopeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ScopeCode" codeListValue="feature">feature</mcc:MD_ScopeCode>
+</mcc:level>
+</mcc:MD_Scope>
+</mrl:scope>
+<mrl:processStep>
+<mrl:LI_ProcessStep>
+<mrl:description>
+<gco:CharacterString>Modifications to the 2006 cartographic boundaries were made to accommodate new ideas or changes to the LRR or MLRA concepts that arose from issues in the usability, consistency, or ambiguity of older concepts. Changes to the boundaries of LRRs and MLRAs involved modifications by NRCS staff upon consensus with cooperators from the National Cooperative Soil Survey.</gco:CharacterString>
+</mrl:description>
+<mrl:stepDateTime>
+<gml:TimeInstant>
+<gml:timePosition>2019-06-28T00:00:00</gml:timePosition>
+</gml:TimeInstant>
+</mrl:stepDateTime>
+</mrl:LI_ProcessStep>
+</mrl:processStep>
+<mrl:processStep>
+<mrl:LI_ProcessStep>
+<mrl:description>
+<gco:CharacterString>The formation of new MLRAs and the combination of others were a major part of the updating process. The 19 new MLRAs are 42A, 42B, 42C, 44A, 44B, 55D, 56A, 56B, 85A, 85B, 91, 95, 102D, 107, 108, 111, 114, 115, and 133C. In addition, MLRA 95 was moved from LRR K to LRR L. Recombined small MLRAs, which will be labeled “obsolete” in the NASIS database, include 20, 31, 42, 44, 56, 70C, 70D, 85, 91A, 91B, 95A, 95B, 102B, 107A, 107B, 108A, 108B, 108C, 108D, 111A, 111B, 111C, 111D, 111E, 114A, 114B, 115A, 115B, 115C, 221, and 235.</gco:CharacterString>
+</mrl:description>
+<mrl:stepDateTime>
+<gml:TimeInstant>
+<gml:timePosition>2019-06-28T00:00:00</gml:timePosition>
+</gml:TimeInstant>
+</mrl:stepDateTime>
+</mrl:LI_ProcessStep>
+</mrl:processStep>
+<mrl:processStep>
+<mrl:LI_ProcessStep>
+<mrl:description>
+<gco:CharacterString>Lines were generalized to approximately the 1:7,500,000 scale. Originally, the lines were commonly coincidental with the general soil map units.</gco:CharacterString>
+</mrl:description>
+<mrl:stepDateTime>
+<gml:TimeInstant>
+<gml:timePosition>2021-01-11T00:00:00</gml:timePosition>
+</gml:TimeInstant>
+</mrl:stepDateTime>
+</mrl:LI_ProcessStep>
+</mrl:processStep>
+</mrl:LI_Lineage>
+</mdb:resourceLineage>
+<mdb:metadataMaintenance>
+<mmi:MD_MaintenanceInformation>
+<mmi:maintenanceAndUpdateFrequency>
+<mmi:MD_MaintenanceFrequencyCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</mmi:MD_MaintenanceFrequencyCode>
+</mmi:maintenanceAndUpdateFrequency>
+</mmi:MD_MaintenanceInformation>
+</mdb:metadataMaintenance>
+</mdb:MD_Metadata>
