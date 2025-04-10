@@ -1,3 +1,4 @@
 data/preprocessed/scoring_indicators/ga_wetlands_cleaned.gpkg filter=lfs diff=lfs merge=lfs -text
 data/raw/gpkg/GA_Wetlands_Geopackage.gpkg filter=lfs diff=lfs merge=lfs -text
+data/preprocessed/scoring_indicators/DesirableUndesirableActivities/ga_wetlands_cleaned.gpkg filter=lfs diff=lfs merge=lfs -text
 *.shp filter=lfs diff=lfs merge=lfs -text
