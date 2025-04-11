@@ -96,14 +96,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="cell-1" class="cell" data-execution_count="1">
+<div id="cell-1" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> shapely.geometry <span class="im">import</span> Point</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> geopy.distance <span class="im">import</span> geodesic</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-3" class="cell" data-execution_count="2">
+<div id="cell-3" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> manhattan_distance(lat1, lon1, lat2, lon2):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Calculate the Manhattan (taxicab) distance between two points specified by latitude and longitude (in degrees).</span></span>
@@ -125,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> lat_distance <span class="op">+</span> lon_distance</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-4" class="cell" data-execution_count="3">
+<div id="cell-4" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> haversine(lat1, lon1, lat2, lon2):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Calculate the great circle distance between two points</span></span>
@@ -144,7 +144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="compute-desirable-activities-score" class="level3">
 <h3 class="anchored" data-anchor-id="compute-desirable-activities-score">Compute Desirable Activities Score</h3>
-<div id="cell-6" class="cell" data-execution_count="4">
+<div id="cell-6" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_score(distance, group, is_rural):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Assign points based on the distance from the LIHTC site, the amenity’s scoring group,</span></span>
@@ -165,18 +165,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    points <span class="op">=</span> <span class="fl">0.0</span></span>
 <span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> group <span class="op">==</span> <span class="dv">1</span>:</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> distance <span class="op">&lt;=</span> <span class="fl">0.5</span>:</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> distance <span class="op">&lt;=</span> <span class="fl">0.55</span>:</span>
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">2.5</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> distance <span class="op">&lt;=</span> <span class="dv">1</span>:</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> distance <span class="op">&lt;=</span> <span class="fl">1.05</span>:</span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">2.0</span></span>
 <span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> (<span class="kw">not</span> is_rural) <span class="kw">and</span> distance <span class="op">&lt;=</span> <span class="fl">1.5</span>:</span>
 <span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">1.5</span></span>
 <span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> is_rural <span class="kw">and</span> distance <span class="op">&lt;=</span> <span class="fl">2.5</span>:</span>
 <span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">2.5</span></span>
 <span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> group <span class="op">==</span> <span class="dv">2</span>:</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> distance <span class="op">&lt;=</span> <span class="fl">0.5</span>:</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> distance <span class="op">&lt;=</span> <span class="fl">0.55</span>:</span>
 <span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">2.0</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> distance <span class="op">&lt;=</span> <span class="dv">1</span>:</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> distance <span class="op">&lt;=</span> <span class="fl">1.05</span>:</span>
 <span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">1.5</span></span>
 <span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> (<span class="kw">not</span> is_rural) <span class="kw">and</span> distance <span class="op">&lt;=</span> <span class="fl">1.5</span>:</span>
 <span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>            points <span class="op">=</span> <span class="fl">1.0</span></span>
@@ -193,61 +193,64 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(csv_file)</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Mapping of amenity names to their scoring groups.</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    amenity_groups <span class="op">=</span> {</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"national_big_box_store"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"retail_store"</span>: <span class="dv">2</span>,</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"grocery_store"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"restaurant"</span>: <span class="dv">2</span>,</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"hospital"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"medical_clinic"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"pharmacy"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"technical_college"</span>: <span class="dv">2</span>,</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">"school"</span>: <span class="dv">1</span>,  </span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">"town_square"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"community_center"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"public_park"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"library"</span>: <span class="dv">1</span>,</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"fire_police_station"</span>: <span class="dv">2</span>,</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">"bank"</span>: <span class="dv">2</span>,</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">"place_of_worship"</span>: <span class="dv">2</span>,</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">"post_office"</span>: <span class="dv">2</span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    total_score <span class="op">=</span> <span class="fl">0.0</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    scores <span class="op">=</span> {}  </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'lat'</span>] <span class="op">=</span> df[<span class="st">'lat'</span>].astype(<span class="bu">float</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'lon'</span>] <span class="op">=</span> df[<span class="st">'lon'</span>].astype(<span class="bu">float</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Mapping of amenity names to their scoring groups.</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    amenity_groups <span class="op">=</span> {</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"national_big_box_store"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"retail_store"</span>: <span class="dv">2</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"grocery_store"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"restaurant"</span>: <span class="dv">2</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"hospital"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">"medical_clinic"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">"pharmacy"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"technical_college"</span>: <span class="dv">2</span>,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"school"</span>: <span class="dv">1</span>,  </span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"town_square"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"community_center"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">"public_park"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">"library"</span>: <span class="dv">1</span>,</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">"fire_police_station"</span>: <span class="dv">2</span>,</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">"bank"</span>: <span class="dv">2</span>,</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">"place_of_worship"</span>: <span class="dv">2</span>,</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>        <span class="st">"post_office"</span>: <span class="dv">2</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop through each desirable amenity type</span></span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> amenity, group <span class="kw">in</span> amenity_groups.items():</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Filter to rows matching THE amenity.</span></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>        df_subset <span class="op">=</span> df[df[<span class="st">'amenity_key'</span>].<span class="bu">str</span>.lower() <span class="op">==</span> amenity.lower()]</span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> df_subset.empty:</span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute the distance for each record in the subset from the LIHTC development site.</span></span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>        df_subset <span class="op">=</span> df_subset.copy()  </span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>        df_subset[<span class="st">'distance'</span>] <span class="op">=</span> df_subset.<span class="bu">apply</span>(</span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>            <span class="kw">lambda</span> row: manhattan_distance(lihtc_lat, lihtc_lon, row[<span class="st">'lat'</span>], row[<span class="st">'lon'</span>]),</span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>            axis<span class="op">=</span><span class="dv">1</span></span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Find the nearest amenity of this type (minimum distance)</span></span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>        min_distance <span class="op">=</span> df_subset[<span class="st">'distance'</span>].<span class="bu">min</span>()</span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>amenity<span class="sc">}</span><span class="ss">: min_distance = </span><span class="sc">{</span>min_distance<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute the score for this amenity based on the computed distance.</span></span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>        points <span class="op">=</span> compute_score(min_distance, group, is_rural)</span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>        scores[amenity] <span class="op">=</span> {<span class="st">"distance"</span>: min_distance, <span class="st">"points"</span>: points}</span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>        total_score <span class="op">+=</span> points</span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> total_score, scores</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>    total_score <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    scores <span class="op">=</span> {}  </span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop through each desirable amenity type</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> amenity, group <span class="kw">in</span> amenity_groups.items():</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Filter to rows matching THE amenity.</span></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>        df_subset <span class="op">=</span> df[df[<span class="st">'amenity_key'</span>].<span class="bu">str</span>.lower() <span class="op">==</span> amenity.lower()]</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> df_subset.empty:</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute the distance for each record in the subset from the LIHTC development site.</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>        df_subset <span class="op">=</span> df_subset.copy()  </span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>        df_subset[<span class="st">'distance'</span>] <span class="op">=</span> df_subset.<span class="bu">apply</span>(</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>            <span class="kw">lambda</span> row: manhattan_distance(lihtc_lat, lihtc_lon, row[<span class="st">'lat'</span>], row[<span class="st">'lon'</span>]),</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>            axis<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Find the nearest amenity of this type (minimum distance)</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>        min_distance <span class="op">=</span> df_subset[<span class="st">'distance'</span>].<span class="bu">min</span>()</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>amenity<span class="sc">}</span><span class="ss">: min_distance = </span><span class="sc">{</span>min_distance<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute the score for this amenity based on the computed distance.</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>        points <span class="op">=</span> compute_score(min_distance, group, is_rural)</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>        scores[amenity] <span class="op">=</span> {<span class="st">"distance"</span>: min_distance, <span class="st">"points"</span>: points}</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>        total_score <span class="op">+=</span> points</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> total_score, scores</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="compute-undesirable-deduction" class="level2">
 <h2 class="anchored" data-anchor-id="compute-undesirable-deduction">Compute Undesirable Deduction</h2>
 <section id="food-deserts" class="level3">
 <h3 class="anchored" data-anchor-id="food-deserts">Food Deserts</h3>
-<div id="cell-10" class="cell" data-execution_count="6">
+<div id="cell-10" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_grocery_store_eligibility(lihtc_lat, lihtc_lon, csv_file):</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Determine if a grocery store is within the qualifying threshold (0.25 miles)</span></span>
@@ -277,7 +280,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>    qualifies <span class="op">=</span> min_distance <span class="op">&lt;=</span> <span class="fl">0.25</span></span>
 <span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> qualifies, min_distance</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-11" class="cell" data-execution_count="7">
+<div id="cell-11" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_food_desert_status_csv(lihtc_lat, lihtc_lon, usda_csv, tract_shapefile):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Determine if the LIHTC site lies in a USDA-designated food desert using a USDA CSV</span></span>
@@ -329,7 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> in_food_desert, tract_id, usda_flag</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-12" class="cell" data-execution_count="8">
+<div id="cell-12" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_food_desert_deduction(lihtc_lat, lihtc_lon, grocery_csv, usda_csv, tract_shapefile):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Compute a 2-point deduction for food desert status if:</span></span>
@@ -352,7 +355,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="inappropriate-surroundings-and-environmental-hazards" class="level3">
 <h3 class="anchored" data-anchor-id="inappropriate-surroundings-and-environmental-hazards">Inappropriate Surroundings and Environmental Hazards</h3>
-<div id="cell-14" class="cell" data-execution_count="9">
+<div id="cell-14" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_undesirable_activities(lihtc_lat, lihtc_lon, csv_file): </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Get the undesirable activities within a 1-mile radius of the LIHTC development site.</span></span>
@@ -398,7 +401,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="compute-overall-score" class="level2">
 <h2 class="anchored" data-anchor-id="compute-overall-score">Compute Overall Score</h2>
-<div id="cell-18" class="cell" data-execution_count="10">
+<div id="cell-18" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_overall_score(lihtc_lat, lihtc_lon, is_rural,</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                          desirable_csv, grocery_csv, usda_csv, tract_shapefile,</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                          undesirable_csv):</span>
@@ -440,91 +443,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> breakdown</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-19" class="cell" data-execution_count="13">
+<div id="cell-19" class="cell" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># LIHTC development site coordinates and rural flag</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    lihtc_lat <span class="op">=</span> <span class="fl">33.823971</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    lihtc_lon <span class="op">=</span> <span class="op">-</span><span class="fl">84.616553</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    is_rural <span class="op">=</span> <span class="va">False</span>          </span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># File paths to your datasets</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    desirable_csv <span class="op">=</span> <span class="st">"../../data/processed/scoring_indicators/desirable_activities_google_places.csv"</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    grocery_csv <span class="op">=</span> <span class="st">"../../data/processed/scoring_indicators/desirable_activities_google_places.csv"</span> </span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    usda_csv <span class="op">=</span> <span class="st">"../../data/raw/scoring_indicators/food_access_research_atlas.csv"</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    tract_shapefile <span class="op">=</span> <span class="st">"../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    undesirable_csv <span class="op">=</span> <span class="st">"../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv"</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># wetlands_filepath = "../../data/preprocessed/scoring_indicators/DesirableUndesirableActivities/ga_wetlands_cleaned.gpkg"</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compute the overall score breakdown</span></span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> compute_overall_score(</span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>        lihtc_lat, lihtc_lon, is_rural,</span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>        desirable_csv, grocery_csv, usda_csv, tract_shapefile,</span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>        undesirable_csv</span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print results</span></span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Overall Desirable/Undesirable Activities Score Breakdown:"</span>)</span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> result.items():</span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> key <span class="op">!=</span> <span class="st">"Details"</span>:</span>
-<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Detailed Breakdown:"</span>)</span>
-<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key, detail <span class="kw">in</span> result[<span class="st">"Details"</span>].items():</span>
-<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">:</span><span class="ch">\n</span><span class="sc">{</span>detail<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    lihtc_lat <span class="op">=</span> <span class="fl">32.082897</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    lihtc_lon <span class="op">=</span> <span class="op">-</span><span class="fl">83.78846</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    is_rural <span class="op">=</span> <span class="va">True</span>          </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># File paths to your datasets</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    desirable_csv <span class="op">=</span> <span class="st">"../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv"</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    grocery_csv <span class="op">=</span> <span class="st">"../../data/processed/scoring_indicators/desirable_activities_google_places.csv"</span> </span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    usda_csv <span class="op">=</span> <span class="st">"../../data/raw/scoring_indicators/food_access_research_atlas.csv"</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    tract_shapefile <span class="op">=</span> <span class="st">"../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    undesirable_csv <span class="op">=</span> <span class="st">"../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv"</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># wetlands_filepath = "../../data/preprocessed/scoring_indicators/DesirableUndesirableActivities/ga_wetlands_cleaned.gpkg"</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compute the overall score breakdown</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> compute_overall_score(</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>        lihtc_lat, lihtc_lon, is_rural,</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>        desirable_csv, grocery_csv, usda_csv, tract_shapefile,</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>        undesirable_csv</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print results</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Overall Desirable/Undesirable Activities Score Breakdown:"</span>)</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key, value <span class="kw">in</span> result.items():</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> key <span class="op">!=</span> <span class="st">"Details"</span>:</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Detailed Breakdown:"</span>)</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key, detail <span class="kw">in</span> result[<span class="st">"Details"</span>].items():</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">:</span><span class="ch">\n</span><span class="sc">{</span>detail<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>national_big_box_store: min_distance = 2.0554863335431897
-retail_store: min_distance = 0.23250864694403542
-grocery_store: min_distance = 0.6145378174263244
-restaurant: min_distance = 0.4004238085302835
-hospital: min_distance = 0.7953053565305306
-medical_clinic: min_distance = 2.375699610624406
-pharmacy: min_distance = 2.0554863335431897
-technical_college: min_distance = 1.076620108627892
-school: min_distance = 0.7958240617593717
-town_square: min_distance = 1.9123905629974953
-community_center: min_distance = 1.0434465732408558
-public_park: min_distance = 0.07444513328464443
-library: min_distance = 2.238437520759098
-fire_police_station: min_distance = 1.147285490179355
-bank: min_distance = 1.522247698186437
-place_of_worship: min_distance = 1.4582035196715513
-post_office: min_distance = 1.4274947765891968
-No USDA data found for census tract 13067031415.
+<pre><code>national_big_box_store: min_distance = 9.71754322617246
+retail_store: min_distance = 0.9626159780103081
+grocery_store: min_distance = 1.2103928674340871
+restaurant: min_distance = 0.9295076273274527
+hospital: min_distance = 1.1404849589379151
+medical_clinic: min_distance = 7.8066669620914055
+pharmacy: min_distance = 1.0251409029796956
+technical_college: min_distance = 1.4079362052815017
+school: min_distance = 2.086311559319727
+town_square: min_distance = 1.0063260263706297
+community_center: min_distance = 0.5606591388569139
+public_park: min_distance = 0.9038876388259596
+library: min_distance = 1.112498972259593
+fire_police_station: min_distance = 1.0682375763889922
+bank: min_distance = 0.9791186485565349
+place_of_worship: min_distance = 0.7889898301846183
+post_office: min_distance = 1.037301127817505
 Found 0 undesirable activities within 0.25 miles:
 No undesirable activities within the threshold.
 Overall Desirable/Undesirable Activities Score Breakdown:
-Desirable Score: 18.0
-Food Desert Deduction: 0
+Desirable Score: 27.5
+Food Desert Deduction: 2
 Undesirable Activities Deduction: 0
-Total Deductions: 0
-Overall Score: 18.0
-Final Score: 18.0
+Total Deductions: 2
+Overall Score: 25.5
+Final Score: 20
 
 Detailed Breakdown:
 desirable:
-{'national_big_box_store': {'distance': 2.0554863335431897, 'points': 0.0}, 'retail_store': {'distance': 0.23250864694403542, 'points': 2.0}, 'grocery_store': {'distance': 0.6145378174263244, 'points': 2.0}, 'restaurant': {'distance': 0.4004238085302835, 'points': 2.0}, 'hospital': {'distance': 0.7953053565305306, 'points': 2.0}, 'medical_clinic': {'distance': 2.375699610624406, 'points': 0.0}, 'pharmacy': {'distance': 2.0554863335431897, 'points': 0.0}, 'technical_college': {'distance': 1.076620108627892, 'points': 1.0}, 'school': {'distance': 0.7958240617593717, 'points': 2.0}, 'town_square': {'distance': 1.9123905629974953, 'points': 0.0}, 'community_center': {'distance': 1.0434465732408558, 'points': 1.5}, 'public_park': {'distance': 0.07444513328464443, 'points': 2.5}, 'library': {'distance': 2.238437520759098, 'points': 0.0}, 'fire_police_station': {'distance': 1.147285490179355, 'points': 1.0}, 'bank': {'distance': 1.522247698186437, 'points': 0.0}, 'place_of_worship': {'distance': 1.4582035196715513, 'points': 1.0}, 'post_office': {'distance': 1.4274947765891968, 'points': 1.0}}
+{'national_big_box_store': {'distance': 9.71754322617246, 'points': 0.0}, 'retail_store': {'distance': 0.9626159780103081, 'points': 1.5}, 'grocery_store': {'distance': 1.2103928674340871, 'points': 2.5}, 'restaurant': {'distance': 0.9295076273274527, 'points': 1.5}, 'hospital': {'distance': 1.1404849589379151, 'points': 2.5}, 'medical_clinic': {'distance': 7.8066669620914055, 'points': 0.0}, 'pharmacy': {'distance': 1.0251409029796956, 'points': 2.0}, 'technical_college': {'distance': 1.4079362052815017, 'points': 1.0}, 'school': {'distance': 2.086311559319727, 'points': 2.5}, 'town_square': {'distance': 1.0063260263706297, 'points': 2.0}, 'community_center': {'distance': 0.5606591388569139, 'points': 2.0}, 'public_park': {'distance': 0.9038876388259596, 'points': 2.0}, 'library': {'distance': 1.112498972259593, 'points': 2.5}, 'fire_police_station': {'distance': 1.0682375763889922, 'points': 1.0}, 'bank': {'distance': 0.9791186485565349, 'points': 1.5}, 'place_of_worship': {'distance': 0.7889898301846183, 'points': 1.5}, 'post_office': {'distance': 1.037301127817505, 'points': 1.5}}
 
 food_desert:
-{'qualifies_for_grocery': False, 'min_grocery_distance': 0.6145378174263244, 'in_food_desert': False, 'census_tract': '13067031415', 'usda_flag': None, 'deduction': 0}
+{'qualifies_for_grocery': False, 'min_grocery_distance': 0.8801206823866082, 'in_food_desert': True, 'census_tract': '13093970300', 'usda_flag': 1, 'deduction': 2}
 
 undesirable:
 Empty DataFrame
 Columns: [data_source, site_name, site_address, site_city, site_county, site_latitude, site_longitude, undesirable_activity, distance]
 Index: []
 </code></pre>
-</div>
-</div>
-<div id="cell-20" class="cell" data-execution_count="67">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test example:</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Manhattan distance test:"</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Two points 0.1 degree apart in latitude should be roughly 6.9 miles apart:</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(manhattan_distance(<span class="fl">33.0</span>, <span class="op">-</span><span class="fl">84.0</span>, <span class="fl">33.1</span>, <span class="op">-</span><span class="fl">84.0</span>))  <span class="co"># Expect ~6.9 miles</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Two points 0.1 degree apart in longitude at latitude 33:</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(manhattan_distance(<span class="fl">33.0</span>, <span class="op">-</span><span class="fl">84.0</span>, <span class="fl">33.0</span>, <span class="op">-</span><span class="fl">83.9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Manhattan distance test:
-6.900000000000098
-5.786826918823097</code></pre>
 </div>
 </div>
 </section>
