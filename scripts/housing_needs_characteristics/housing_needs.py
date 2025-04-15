@@ -24,7 +24,7 @@ class HousingNeedsCharacteristics:
         )
         employment_growth = self.county_data.get("employment_growth_rate", 0) > 1
         
-        return severe_housing_problem or population_growth or employment_growth
+        return severe_housing_problem and (population_growth or employment_growth)
     
     def qualifies_for_stable_or_redevelopment_bonus(self):
         """
