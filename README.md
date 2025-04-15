@@ -32,6 +32,7 @@ Contains raw, unprocessed data files.
 ## **2. Scripts Folder (`scripts/`)**: Contains Jupyter Notebooks for running analyses and processing data.
 
 ### **`scripts/desirable_undesirable_activities/`**
+<<<<<<< HEAD
 - `desirable_data_preprocess.ipynb` 
   - Collects desirable amenities across Georgia using the Google Places API using a systematic geographic grid search 
   - Applies filters based on QAP criteria to identify relevant amenities
@@ -58,21 +59,36 @@ Contains raw, unprocessed data files.
     - Food desert checks using USDA data and grocery store proximity
     - Deduction logic for nearby undesirable facilities and contaminated sites
 
+=======
+- `desirable_undesirable_activities.ipynb` 
+  - Computes scores for desirable and undesirable activities using Google Places API.  
+  - Fetches nearby amenities and hazardous locations.
+>>>>>>> 61dc93db86ac9853e70900b8795be1d5929393d0
 
 ### **`scripts/quality_education/`**
 - (Currently empty or for future quality education-related analysis.)
 
 ### **🔹 `scripts/stable_communities/`**
+<<<<<<< HEAD
+=======
+- `stable_communities.ipynb` 
+  - Main script for analyzing stable community scores.  
+  - Uses preprocessed data from `data/processed/scoring_indicators/`.  
+
+>>>>>>> 61dc93db86ac9853e70900b8795be1d5929393d0
 - `stable_communities_data_preprocess.ipynb` →  
   - Cleans and prepares the raw data from `data/raw/scoring_indicators/2024stablecommunities.xlsx`.  
   - Outputs the cleaned csvs to dataset to `data/preprocessed/scoring_indicators/`.
   - Creates a merged data set with all scoring indicators, median values, and logic to compute the score for stable communities
+<<<<<<< HEAD
 - `stable_communities.ipynb` 
   - Computes a Stable Communities score for a given location based on nearby census tract indicators, using Georgia’s LIHTC scoring criteria
   - Identifies the actual census tract and neighboring tracts within 0.25 miles of a site
   - Uses pre-processed indicator data (e.g., Environmental Health, Transit Access, Median Income) to determine how many indicators are above the 50th percentile
   - Designed to be called via get_stable_communities_score(lat, lon, score_type) with score_type as "use_only_actual_tract" or "use_nearby_tract"
 
+=======
+>>>>>>> 61dc93db86ac9853e70900b8795be1d5929393d0
 
 <!-- - `stable_communities_grid.ipynb` →  
   - Generates a spatial grid of stable community scores across Georgia.  

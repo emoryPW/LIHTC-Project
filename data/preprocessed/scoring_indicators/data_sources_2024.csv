@@ -1,0 +1,14 @@
+,Unnamed: 1,Unnamed: 2,Unnamed: 3
+1,Metric,Data provider,Description
+2,Environmental Health Index*,Environmental Protection Agency,Index developed by consultant for purposes of Georgia Housing Needs Assessment. 
+3,Transit Access Index*,"US Census Bureau, Center for Neighborhood Technology",Index developed by consultant for purposes of Georgia Housing Needs Assessment. 
+4,Percent of Population Above the Poverty Level,US Census Bureau,"ACS 5-Year Estimates, 2021, S1701_C03_001E"
+5,Median Income,US Census Bureau,"ACS 5-Year Estimates, 2021, B19013_001E"
+6,Jobs Proximity Index*,US Department of Housing and Urban Development,Index developed by consultant for purposes of Georgia Housing Needs Assessment. 
+9,"*Overview of indexes from the Georgia Housing Needs Assessment: 
+
+The Environmental Health Index summarizes potential exposure to harmful toxins at the census tract level. Environmental indicators were derived from the EPA’s EJSCREEN tool, and includes eleven indicators related to carcinogenic, respiratory, and neurological hazards. Higher index values indicate less exposure to toxins harmful to human health.
+
+The Transit Access Index represents the ease with which people can access public transportation. While the Federal Highway Administration (FHWA) under the US Department of Transportation estimates accessible transit stops as being ¼ to ½ mile away from a pedestrian’s starting point, comparison at the State level would disproportionately single out rural areas. Instead, transportation cost as a proportion of income and mean travel time to work were used as a proxy for determining access to affordable transit. Higher index values indicate a higher access to affordable transit.
+
+The Jobs Proximity Index rates a given census tract as a function of its distance to all job locations. As distance from a job increases, the job opportunity is “discounted” because it becomes more difficult to access that job. The index utilizes a gravity model where the distance from any single job location is positively weighted by the size of employment (job opportunities) at that location and inversely weighted by the labor supply (competition) to that location. As distance from a job increases, the job opportunity is “discounted” because it becomes more difficult to access that job. Higher index values indicates higher proximity to job locations.",,
