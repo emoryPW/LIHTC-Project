@@ -53,7 +53,7 @@ class ScoringCriterion:
             2018: 75.3,
             2019: 78.8
         }
-    }
+    },
 
     # --- StableCommunities ---
     "indicators_df": pd.read_csv("data/community_indicators.csv"),
