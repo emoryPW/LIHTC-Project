@@ -409,10 +409,22 @@ class HousingNeedsCharacteristics(ScoringCriterion):
         super().__init__(latitude, longitude, **kwargs)
 
         self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/census_tracts.json").to_crs(epsg=4326)
-        self.census_tract_data_df = kwargs.get("census_tract_data", {})
-        self.county_data = kwargs.get("county_data", {})
-        self.stable_community_score = None  # Must be set externally
-        self.revitalization_score = kwargs.get("revitalization_score", 0)
+        self.census_tract_data_df = kwargs.get("census_tract_data", {}) # Dictionary containing HUD-defined severe housing problems for the Census Tract.
+        self.county_data = kwargs.get("county_data", {}) # Dictionary containing population and employment growth statistics for the county.
+        self.stable_community_score = kwargs.get("stable_community_score")
+        if self.stable_community_score is None:
+            try:
+                self.stable_community_score = StableCommunities(latitude, longitude, **kwargs).calculate_score()
+            except Exception as e:
+                print("Warning: Failed to calculate StableCommunities score internally:", e)
+                self.stable_community_score = None
+        self.revitalization_score = kwargs.get("revitalization_score")
+        """ if self.revitalization_score is None:
+            try:
+                self.revitalization_score = RevitalizationRedevelopmentPlans(latitude, longitude, **kwargs).calculate_score()
+            except Exception as e:
+                print("Warning: Failed to calculate RevitalizationRedevelopmentPlans score internally:", e)
+                self.revitalization_score = None """
         self.in_qct = kwargs.get("in_qct", True)
 
         point = Point(self.longitude, self.latitude)
