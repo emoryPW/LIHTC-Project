@@ -7,6 +7,8 @@ import geopandas as gpd
 from shapely.geometry import Point
 import math
 
+######################################################################################################################################
+
 # --- Base class for shared geolocation and flexible input ---
 class ScoringCriterion:
     def __init__(self, latitude, longitude, **kwargs):
@@ -16,6 +18,50 @@ class ScoringCriterion:
 
     def calculate_score(self):
         raise NotImplementedError("Must implement in subclass")
+
+####################################################################################################################################
+# kwargs should be a dictionary which has the format:
+""" kwargs = {
+    # --- CommunityTransportationOptions ---
+    "stops_df": pd.read_csv("data/transit_stops.csv"),
+    "routes_df": pd.read_csv("data/transit_routes.csv"),
+    "dca_pool": "Metro",
+    "transit_service_days": 7,
+    "is_fixed_route": True,
+    "is_site_owned_by_transit_agency": False,
+
+    # --- DesirableUndesirableActivities ---
+    "is_rural": False,
+    "desirable_csv": "data/desirable_amenities.csv",
+    "grocery_csv": "data/grocery_stores.csv",
+    "usda_csv": "data/usda_food_desert.csv",
+    "tract_shapefile": "data/shapefiles/census_tracts.geojson",
+    "undesirable_csv": "data/undesirable_activities.csv",
+
+    # --- QualityEducation ---
+    "school_df": pd.read_csv("data/school_performance.csv"),
+    "state_avg_by_year": {
+        2018: 72.3,
+        2019: 74.1
+    },
+
+    # --- StableCommunities ---
+    "indicators_df": pd.read_csv("data/community_indicators.csv"),
+
+    # --- HousingNeedsCharacteristics ---
+    "census_tract_data": {
+        # GEOID: data for that census tract
+        "13089023300": {"severe_housing_problem": 48},
+        "13089023400": {"severe_housing_problem": 22}
+    },
+    "county_data": {
+        "ten_year_population_growth": True,
+        "three_year_avg_growth_rate": 1.6,
+        "employment_growth_rate": 2.3
+    },
+    "revitalization_score": 4,
+    "in_qct": False  # Required for housing need eligibility
+} """
 
 #####################################################################################################################################
 
