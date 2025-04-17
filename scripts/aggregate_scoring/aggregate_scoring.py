@@ -242,9 +242,17 @@ class QualityEducation(ScoringCriterion):
         self.state_avg_by_year = kwargs.get("state_avg_by_year")
 
         # Automatically find matching area using shapefile
-        gdf = gpd.read_file("../../data/raw/shapefiles/APSBoundaries.json").to_crs(epsg=4326)
+        files = [
+            "../../data/raw/shapefiles/quality_education/APSBoundaries.json",
+            "../../data/raw/shapefiles/quality_education/Administrative.geojson",
+            "../../data/raw/shapefiles/quality_education/DKBHS.json",
+            "../../data/raw/shapefiles/quality_education/DKE.json",
+            "../../data/raw/shapefiles/quality_education/DKM.json"
+        ]
+        gdfs = [gpd.read_file(file).to_crs(epsg=4326) for file in files]
+        combined_gdf = gpd.GeoDataFrame(pd.concat(gdfs, ignore_index=True), crs="EPSG:4326")
         point = Point(self.longitude, self.latitude)  # Note: (lon, lat) order for Point
-        self.matching_area = gdf[gdf.contains(point)]
+        self.matching_area = combined_gdf[combined_gdf.contains(point)]
 
     def preprocess_school_name(self, name):
         name = re.sub(r'[^\w\s]', '', str(name).lower())
