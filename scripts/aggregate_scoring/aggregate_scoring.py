@@ -268,11 +268,20 @@ class QualityEducation(ScoringCriterion):
         return None
 
     def qualifies_by_A(self, school):
-        years = [y for y in [2018, 2019] if y in self.state_avg_by_year and y in school.index and not pd.isna(school[y])]
+        grade_cluster = school.get("Grade Cluster", "").strip().upper()
+        cluster_key = {"E": "elementary", "M": "middle", "H": "high"}.get(grade_cluster)
+        if not cluster_key:
+            return False
+
+        if cluster_key not in self.state_avg_by_year:
+            return False
+
+        years = [y for y in [2018, 2019] if y in self.state_avg_by_year[cluster_key] and y in school.index and not pd.isna(school[y])]
         if not years:
             return False
+
         school_avg = school[years].mean()
-        state_avg = sum(self.state_avg_by_year[y] for y in years) / len(years)
+        state_avg = sum(self.state_avg_by_year[cluster_key][y] for y in years) / len(years)
         return school_avg > state_avg
 
     def qualifies_by_B(self, school):
