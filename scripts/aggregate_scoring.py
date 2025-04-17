@@ -39,11 +39,21 @@ class ScoringCriterion:
     "undesirable_csv": "data/undesirable_activities.csv",
 
     # --- QualityEducation ---
-    "school_df": pd.read_csv("data/school_performance.csv"),
+    "school_df": pd.read_csv("data/processed/quality_edducation/Option_C_Scores_Eligibility_with_BTO.csv"),
     "state_avg_by_year": {
-        2018: 72.3,
-        2019: 74.1
-    },
+        "elementary": {
+            2018: 77.8,
+            2019: 79.9
+        },
+        "middle": {
+            2018: 76.2,
+            2019: 77
+        },
+        "high": {
+            2018: 75.3,
+            2019: 78.8
+        }
+    }
 
     # --- StableCommunities ---
     "indicators_df": pd.read_csv("data/community_indicators.csv"),
@@ -250,11 +260,11 @@ class QualityEducation(ScoringCriterion):
             return None
 
         cleaned_input = self.preprocess_school_name(school_name)
-        cleaned_names = filtered_df["School Name "].apply(self.preprocess_school_name).tolist()
+        cleaned_names = filtered_df["School Name"].apply(self.preprocess_school_name).tolist()
         best_match, score = process.extractOne(cleaned_input, cleaned_names, scorer=fuzz.token_set_ratio)
 
         if score > 80:
-            return filtered_df[filtered_df["School Name "].apply(self.preprocess_school_name) == best_match].iloc[0]
+            return filtered_df[filtered_df["School Name"].apply(self.preprocess_school_name) == best_match].iloc[0]
         return None
 
     def qualifies_by_A(self, school):
