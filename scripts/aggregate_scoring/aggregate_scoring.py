@@ -31,7 +31,7 @@ class ScoringCriterion:
     "is_site_owned_by_transit_agency": False,
 
     # --- DesirableUndesirableActivities ---
-    "is_rural": False,
+    "rural_gdf": "data/",
     "desirable_csv": "data/desirable_amenities.csv",
     "grocery_csv": "data/grocery_stores.csv",
     "usda_csv": "data/usda_food_desert.csv",
