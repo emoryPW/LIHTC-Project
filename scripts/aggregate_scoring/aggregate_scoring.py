@@ -140,12 +140,17 @@ class CommunityTransportationOptions(ScoringCriterion):
 class DesirableUndesirableActivities(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
-        self.is_rural = kwargs.get("is_rural", False)
+        self.rural_gdf = kwargs.get("rural_gdf")
         self.desirable_csv = kwargs.get("desirable_csv")
         self.grocery_csv = kwargs.get("grocery_csv")
         self.usda_csv = kwargs.get("usda_csv")
         self.tract_shapefile = kwargs.get("tract_shapefile")
         self.undesirable_csv = kwargs.get("undesirable_csv")
+    
+    def classify_location(lat, lon, rural_gdf):
+        rural_union_geom = rural_gdf.geometry.unary_union
+        point = Point(lon, lat)
+        return point.within(rural_union_geom)
 
     def manhattan_distance(self, lat1, lon1, lat2, lon2):
         lat_diff = abs(lat2 - lat1) * 69
@@ -162,16 +167,18 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
     def compute_score(self, distance, group):
+        is_rural = self.classify_location(self.latitude, self.longitude, self.rural_gdf)
+
         if group == 1:
             if distance <= 0.55: return 2.5
             elif distance <= 1.05: return 2.0
-            elif not self.is_rural and distance <= 1.5: return 1.5
-            elif self.is_rural and distance <= 2.5: return 2.5
+            elif not is_rural and distance <= 1.5: return 1.5
+            elif is_rural and distance <= 2.5: return 2.5
         elif group == 2:
             if distance <= 0.55: return 2.0
             elif distance <= 1.05: return 1.5
-            elif not self.is_rural and distance <= 1.5: return 1.0
-            elif self.is_rural and distance <= 2.5: return 1.0
+            elif not is_rural and distance <= 1.5: return 1.0
+            elif is_rural and distance <= 2.5: return 1.0
         return 0
 
     def compute_desirable_score(self):
