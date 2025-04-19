@@ -140,16 +140,16 @@ class CommunityTransportationOptions(ScoringCriterion):
 class DesirableUndesirableActivities(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
-        self.rural_gdf = kwargs.get("rural_gdf")
+        self.rural_gdf = gpd.read_file(kwargs.get("rural_gdf")).to_crs("EPSG:4326")
         self.desirable_csv = kwargs.get("desirable_csv")
         self.grocery_csv = kwargs.get("grocery_csv")
         self.usda_csv = kwargs.get("usda_csv")
         self.tract_shapefile = kwargs.get("tract_shapefile")
         self.undesirable_csv = kwargs.get("undesirable_csv")
     
-    def classify_location(lat, lon, rural_gdf):
-        rural_union_geom = rural_gdf.geometry.unary_union
-        point = Point(lon, lat)
+    def classify_location(self, latitude, longitude):
+        rural_union_geom = self.rural_gdf.unary_union
+        point = Point(latitude, longitude)
         return point.within(rural_union_geom)
 
     def manhattan_distance(self, lat1, lon1, lat2, lon2):
@@ -167,7 +167,7 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
     def compute_score(self, distance, group):
-        is_rural = self.classify_location(self.latitude, self.longitude, self.rural_gdf)
+        is_rural = self.classify_location(self.latitude, self.longitude)
 
         if group == 1:
             if distance <= 0.55: return 2.5
