@@ -31,12 +31,12 @@ class ScoringCriterion:
     "is_site_owned_by_transit_agency": False,
 
     # --- DesirableUndesirableActivities ---
-    "rural_gdf": gpd.read_file("../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp").to_crs("EPSG:4326"),
-    "desirable_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv"),
-    "grocery_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places.csv"),
-    "usda_csv": pd.read_csv("../../data/raw/scoring_indicators/food_access_research_atlas.csv", dtype={'CensusTract': str}),
-    "tract_shapefile": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"),
-    "undesirable_csv": pd.read_csv("../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv"),
+    "rural_gdf": "../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp",
+    "desirable_csv": "../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv",
+    "grocery_csv": "../../data/processed/scoring_indicators/desirable_activities_google_places.csv",
+    "usda_csv": "../../data/raw/scoring_indicators/food_access_research_atlas.csv",
+    "tract_shapefile": "../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp",
+    "undesirable_csv": "../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv",
 
     # --- QualityEducation ---
     "school_df": pd.read_csv("../../data/processed/quality_education/Option_C_Scores_Eligibility_with_BTO.csv"),
