@@ -31,15 +31,15 @@ class ScoringCriterion:
     "is_site_owned_by_transit_agency": False,
 
     # --- DesirableUndesirableActivities ---
-    "rural_gdf": "data/",
-    "desirable_csv": "data/desirable_amenities.csv",
-    "grocery_csv": "data/grocery_stores.csv",
-    "usda_csv": "data/usda_food_desert.csv",
-    "tract_shapefile": "data/shapefiles/census_tracts.geojson",
-    "undesirable_csv": "data/undesirable_activities.csv",
+    "rural_gdf": gpd.read_file("../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp").to_crs("EPSG:4326"),
+    "desirable_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv"),
+    "grocery_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places.csv"),
+    "usda_csv": pd.read_csv("../../data/raw/scoring_indicators/food_access_research_atlas.csv", dtype={'CensusTract': str}),
+    "tract_shapefile": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"),
+    "undesirable_csv": pd.read_csv("../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv"),
 
     # --- QualityEducation ---
-    "school_df": pd.read_csv("data/processed/quality_edducation/Option_C_Scores_Eligibility_with_BTO.csv"),
+    "school_df": pd.read_csv("../../data/processed/quality_education/Option_C_Scores_Eligibility_with_BTO.csv"),
     "state_avg_by_year": {
         "elementary": {
             2018: 77.8,
@@ -56,7 +56,7 @@ class ScoringCriterion:
     },
 
     # --- StableCommunities ---
-    "indicators_df": pd.read_csv("data/community_indicators.csv"),
+    "indicators_df": pd.read_csv("../../data/processed/scoring_indicators/stable_communities_2024_processed.csv"),
 
     # --- HousingNeedsCharacteristics ---
     "census_tract_data": {
@@ -365,7 +365,7 @@ class StableCommunities(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
         self.indicators_df = kwargs.get("indicators_df")
-        self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/census_tracts.json")
+        self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp")
         self.tract_dict = self.find_census_tracts()
 
     def find_census_tracts(self):
