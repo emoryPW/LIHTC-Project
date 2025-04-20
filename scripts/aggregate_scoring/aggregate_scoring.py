@@ -39,7 +39,7 @@ class ScoringCriterion:
     "undesirable_csv": "../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv",
 
     # --- QualityEducation ---
-    "school_df": pd.read_csv("../../data/processed/quality_education/Option_C_Scores_Eligibility_with_BTO.csv"),
+    "school_df": pd.read_csv("../../data/processed/scoring_indicators/quality_education/Option_C_Scores_Eligibility_with_BTO.csv"),
     "state_avg_by_year": {
         "elementary": {
             2018: 77.8,
@@ -59,17 +59,8 @@ class ScoringCriterion:
     "indicators_df": pd.read_csv("../../data/processed/scoring_indicators/stable_communities_2024_processed.csv"),
 
     # --- HousingNeedsCharacteristics ---
-    "census_tract_data": {
-        # GEOID: data for that census tract
-        "13089023300": {"severe_housing_problem": 48},
-        "13089023400": {"severe_housing_problem": 22}
-    },
-    "county_data": {
-        "ten_year_population_growth": True,
-        "three_year_avg_growth_rate": 1.6,
-        "employment_growth_rate": 2.3
-    },
-    "revitalization_score": 4,
+    "census_tract_data": pd.read_csv("../../data/processed/scoring_indicators/housing_needs/merged_housing_data.csv"),
+    #"revitalization_score": 4,
     "in_qct": False  # Required for housing need eligibility
 } """
 
@@ -149,7 +140,7 @@ class DesirableUndesirableActivities(ScoringCriterion):
     
     def classify_location(self, latitude, longitude):
         rural_union_geom = self.rural_gdf.unary_union
-        point = Point(latitude, longitude)
+        point = Point(longitude, latitude)
         return point.within(rural_union_geom)
 
     def manhattan_distance(self, lat1, lon1, lat2, lon2):
@@ -369,7 +360,7 @@ class StableCommunities(ScoringCriterion):
         self.tract_dict = self.find_census_tracts()
 
     def find_census_tracts(self):
-        point = Point(self.latitude, self.longitude)
+        point = Point(self.longitude, self.latitude)
         gdf_wgs = self.tracts_gdf.to_crs(epsg=4326)
         actual_tract = gdf_wgs[gdf_wgs.contains(point)]
 
@@ -434,17 +425,14 @@ class StableCommunities(ScoringCriterion):
         return score
 
 ###################################################################################################################################
-# We didnt do the revitalization score in this project
-# "Not located in a Qualified Census Tract" condition missing
 
 # --- Housing Needs Characteristics ---
 class HousingNeedsCharacteristics(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
 
-        self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/census_tracts.json").to_crs(epsg=4326)
-        self.census_tract_data_df = kwargs.get("census_tract_data", {}) # Dictionary containing HUD-defined severe housing problems for the Census Tract.
-        self.county_data = kwargs.get("county_data", {}) # Dictionary containing population and employment growth statistics for the county.
+        self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/HousingNeeds/tl_2020_13_tract.zip").to_crs(epsg=4326)
+        self.census_tract_data_df = kwargs.get("census_tract_data", {})
         self.stable_community_score = kwargs.get("stable_community_score")
         if self.stable_community_score is None:
             try:
@@ -452,13 +440,15 @@ class HousingNeedsCharacteristics(ScoringCriterion):
             except Exception as e:
                 print("Warning: Failed to calculate StableCommunities score internally:", e)
                 self.stable_community_score = None
-        self.revitalization_score = kwargs.get("revitalization_score")
+        
+        # self.revitalization_score = kwargs.get("revitalization_score")
         """ if self.revitalization_score is None:
             try:
                 self.revitalization_score = RevitalizationRedevelopmentPlans(latitude, longitude, **kwargs).calculate_score()
             except Exception as e:
                 print("Warning: Failed to calculate RevitalizationRedevelopmentPlans score internally:", e)
                 self.revitalization_score = None """
+        # manually give whether in qct
         self.in_qct = kwargs.get("in_qct", True)
 
         point = Point(self.longitude, self.latitude)
@@ -470,12 +460,14 @@ class HousingNeedsCharacteristics(ScoringCriterion):
             self.census_tract_data = {}
 
     def qualifies_for_housing_need_and_growth(self):
-        severe_housing_problem = self.census_tract_data.get("severe_housing_problem", 0) >= 45
+        severe_housing_problem = (self
+                                .census_tract_data
+                                .get("% of rental units occupied by 80% AMI and below with Severe Housing Problems", 0) >= 45)
         population_growth = (
-            self.county_data.get("ten_year_population_growth", False) and
-            self.county_data.get("three_year_avg_growth_rate", 0) > 1
+            self.census_tract_data.get("Is 2021 greater than 2011?", False) and
+            self.census_tract_data.get("Average: YoY Growth 2018-2021", 0) > 1
         )
-        employment_growth = self.county_data.get("employment_growth_rate", 0) > 1
+        employment_growth = self.census_tract_data.get("Average change: 2020-2022", 0) > 1
         not_in_qct = not self.in_qct
         return (severe_housing_problem or population_growth or employment_growth) and not_in_qct
 
@@ -483,7 +475,7 @@ class HousingNeedsCharacteristics(ScoringCriterion):
         if self.stable_community_score is None:
             raise ValueError("'stable_community_score' must be set externally before calling this method.")
         return self.qualifies_for_housing_need_and_growth() and (
-            self.stable_community_score >= 5 or self.revitalization_score >= 5
+            self.stable_community_score >= 5 #or self.revitalization_score >= 5
         )
 
     def calculate_score(self):
