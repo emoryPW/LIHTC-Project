@@ -113,7 +113,7 @@ class CommunityTransportationOptions(ScoringCriterion):
                 dist = self.haversine(self.latitude, self.longitude, stop['latitude'], stop['longitude'])
                 stop['used_fallback'] = True
             else:
-                stop['used_fallback'] = False
+                stop['used_fallback'] = False 
 
             stop['walking_distance_miles'] = dist
             results.append(stop)
@@ -265,16 +265,7 @@ class QualityEducation(ScoringCriterion):
         self.school_df = kwargs.get("school_df")
         self.state_avg_by_year = kwargs.get("state_avg_by_year")
 
-        # Automatically find matching area using shapefile
-        files = [
-            "../../data/raw/shapefiles/quality_education/APSBoundaries.json",
-            "../../data/raw/shapefiles/quality_education/Administrative.geojson",
-            "../../data/raw/shapefiles/quality_education/DKBHS.json",
-            "../../data/raw/shapefiles/quality_education/DKE.json",
-            "../../data/raw/shapefiles/quality_education/DKM.json"
-        ]
-        gdfs = [gpd.read_file(file).to_crs(epsg=4326) for file in files]
-        combined_gdf = gpd.GeoDataFrame(pd.concat(gdfs, ignore_index=True), crs="EPSG:4326")
+        combined_gdf = gpd.read_file("../../data/processed/scoring_indicators/quality_education/stacked_merged.geojson", crs="EPSG:4326")
         point = Point(self.longitude, self.latitude)  # Note: (lon, lat) order for Point
         self.matching_area = combined_gdf[combined_gdf.contains(point)]
 
@@ -340,9 +331,9 @@ class QualityEducation(ScoringCriterion):
         if self.matching_area is None or self.matching_area.empty:
             return 0
 
-        elementary = self.matching_area.iloc[0].get("Elementary")
-        middle = self.matching_area.iloc[0].get("Middle")
-        high = self.matching_area.iloc[0].get("High")
+        elementary = self.matching_area.iloc[0].get("elementary")
+        middle = self.matching_area.iloc[0].get("middle")
+        high = self.matching_area.iloc[0].get("high")
 
         best_elementary = self.find_best_match(elementary, "elementary")
         best_middle = self.find_best_match(middle, "middle")
