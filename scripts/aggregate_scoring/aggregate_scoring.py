@@ -6,6 +6,8 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
 import math
+import osmnx as ox
+import networkx as nx
 
 ######################################################################################################################################
 
@@ -23,12 +25,7 @@ class ScoringCriterion:
 # kwargs should be a dictionary which has the format:
 """ kwargs = {
     # --- CommunityTransportationOptions ---
-    "stops_df": pd.read_csv("data/transit_stops.csv"),
-    "routes_df": pd.read_csv("data/transit_routes.csv"),
-    "dca_pool": "Metro",
-    "transit_service_days": 7,
-    "is_fixed_route": True,
-    "is_site_owned_by_transit_agency": False,
+    "transit_df": pd.read_csv("../../data/raw/scoring_indicators/community_trans_options_sites/georgia_transit_locations_with_hub.csv"),
 
     # --- DesirableUndesirableActivities ---
     "rural_gdf": "../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp",
@@ -65,65 +62,94 @@ class ScoringCriterion:
 } """
 
 #####################################################################################################################################
-
-# --- Community Transportation Options (refactored with functional logic) ---
+# --- Community Transportation Options ---
 class CommunityTransportationOptions(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
-        self.stops_df = kwargs.get("stops_df")
-        self.routes_df = kwargs.get("routes_df")
-        self.dca_pool = kwargs.get("dca_pool", "Metro")
-        self.transit_service_days = kwargs.get("transit_service_days", 5)
-        self.is_fixed_route = kwargs.get("is_fixed_route", True)
-        self.is_site_owned_by_transit_agency = kwargs.get("is_site_owned_by_transit_agency", False)
+        self.transit_df = kwargs.get("transit_df")  # Pre-loaded transit data
 
-    def find_nearest_transit_stop(self):
-        self.stops_df["distance_miles"] = self.stops_df.apply(
-            lambda row: geodesic((self.latitude, self.longitude), (row["stop_lat"], row["stop_lon"])).miles,
-            axis=1
-        )
-        nearest_stop = self.stops_df.loc[self.stops_df["distance_miles"].idxmin()]
-        return {
-            "stop_id": nearest_stop["stop_id"],
-            "stop_name": nearest_stop["stop_name"],
-            "stop_lat": nearest_stop["stop_lat"],
-            "stop_lon": nearest_stop["stop_lon"],
-            "distance_miles": nearest_stop["distance_miles"],
-        }
+    def haversine(self, lat1, lon1, lat2, lon2):
+        R = 3958.8
+        phi1 = math.radians(lat1)
+        phi2 = math.radians(lat2)
+        dphi = math.radians(lat2 - lat1)
+        dlambda = math.radians(lon2 - lon1)
+        a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        return R * c
 
-    def verify_transit_hub(self, stop_id):
-        stop_routes = self.routes_df[self.routes_df["route_id"] == stop_id]
-        return len(stop_routes) >= 3
+    def get_network_walking_distance(self, orig_lat, orig_lon, dest_lat, dest_lon):
+        try:
+            north = max(orig_lat, dest_lat) + 0.02
+            south = min(orig_lat, dest_lat) - 0.02
+            east = max(orig_lon, dest_lon) + 0.02
+            west = min(orig_lon, dest_lon) - 0.02
+            G = ox.graph_from_bbox(north, south, east, west, network_type='walk', simplify=True, truncate_by_edge=True)
+            orig_node = ox.nearest_nodes(G, X=orig_lon, Y=orig_lat)
+            dest_node = ox.nearest_nodes(G, X=dest_lon, Y=dest_lat)
+            distance_meters = nx.shortest_path_length(G, source=orig_node, target=dest_node, weight='length')
+            return distance_meters * 0.000621371
+        except:
+            return None
+
+    def filter_candidate_stops(self):
+        candidates = []
+        for _, stop in self.transit_df.iterrows():
+            dist = self.haversine(self.latitude, self.longitude, stop['latitude'], stop['longitude'])
+            if dist <= 1.1:
+                stop_data = stop.to_dict()
+                stop_data['straight_line_dist'] = dist
+                candidates.append(stop_data)
+        return candidates
+
+    def calculate_all_walking_distances(self, candidates):
+        results = []
+        for stop in candidates:
+            dist = self.get_network_walking_distance(
+                self.latitude, self.longitude, stop['latitude'], stop['longitude'])
+
+            if dist is None:
+                # fallback to straight-line if walking distance fails
+                dist = self.haversine(self.latitude, self.longitude, stop['latitude'], stop['longitude'])
+                stop['used_fallback'] = True
+            else:
+                stop['used_fallback'] = False
+
+            stop['walking_distance_miles'] = dist
+            results.append(stop)
+
+        return results
+
+    def apply_qap_scoring(self, results):
+        POINTS_A = {0.25: 5.0, 0.5: 4.5, 1.0: 4.0}
+        POINTS_B = {0.25: 3.0, 0.5: 2.0, 1.0: 1.0}
+
+        score_a, score_b = 0.0, 0.0
+        if not results:
+            return 0.0
+
+        results.sort(key=lambda x: x['walking_distance_miles'])
+        closest_stop = results[0]
+        for thresh, pts in sorted(POINTS_B.items()):
+            if closest_stop['walking_distance_miles'] <= thresh:
+                score_b = pts
+                break
+
+        hubs = [r for r in results if r['is_potential_hub']]
+        if hubs:
+            closest_hub = hubs[0]
+            for thresh, pts in sorted(POINTS_A.items()):
+                if closest_hub['walking_distance_miles'] <= thresh:
+                    score_a = pts
+                    break
+
+        return max(score_a, score_b)
 
     def calculate_score(self):
-        nearest_stop = self.find_nearest_transit_stop()
-        distance = nearest_stop["distance_miles"]
-        stop_id = nearest_stop["stop_id"]
-        is_hub = self.verify_transit_hub(stop_id)
+        candidates = self.filter_candidate_stops()
+        results = self.calculate_all_walking_distances(candidates)
+        return self.apply_qap_scoring(results)
 
-        expected_score = 0.0
-
-        if self.dca_pool == "Metro":
-            if self.is_site_owned_by_transit_agency and is_hub and self.transit_service_days == 7:
-                expected_score = 6.0  # A.1
-            elif is_hub and self.transit_service_days >= 5:
-                if distance <= 0.25:
-                    expected_score = 5.0
-                elif distance <= 0.5:
-                    expected_score = 4.5
-                elif distance <= 1.0:
-                    expected_score = 4.0
-
-        # Subsection B: General Public Transit Access
-        if self.dca_pool == "Metro" and self.is_fixed_route and self.transit_service_days >= 5:
-            if distance <= 0.25:
-                expected_score = max(expected_score, 3.0)
-            elif distance <= 0.5:
-                expected_score = max(expected_score, 2.0)
-            elif distance <= 1.0:
-                expected_score = max(expected_score, 1.0)
-
-        return expected_score
 
 ####################################################################################################################################
 
