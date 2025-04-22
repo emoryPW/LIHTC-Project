@@ -28,15 +28,16 @@ class ScoringCriterion:
     "transit_df": pd.read_csv("../../data/raw/scoring_indicators/community_trans_options_sites/georgia_transit_locations_with_hub.csv"),
 
     # --- DesirableUndesirableActivities ---
-    "rural_gdf": "../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp",
-    "desirable_csv": "../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv",
-    "grocery_csv": "../../data/processed/scoring_indicators/desirable_activities_google_places.csv",
-    "usda_csv": "../../data/raw/scoring_indicators/food_access_research_atlas.csv",
-    "tract_shapefile": "../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp",
-    "undesirable_csv": "../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv",
+    "rural_gdf": gpd.read_file("../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp").to_crs("EPSG:4326"),
+    "desirable_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv"),
+    "grocery_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places.csv"),
+    "usda_csv": pd.read_csv("../../data/raw/scoring_indicators/food_access_research_atlas.csv", dtype={'CensusTract': str}),
+    "tract_shapefile": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"),
+    "undesirable_csv": pd.read_csv("../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv"),
 
     # --- QualityEducation ---
     "school_df": pd.read_csv("../../data/processed/scoring_indicators/quality_education/Option_C_Scores_Eligibility_with_BTO.csv"),
+    "combined_gdf": gpd.read_file("../../data/processed/scoring_indicators/quality_education/merged1.geojson", crs="EPSG:4326"),
     "state_avg_by_year": {
         "elementary": {
             2018: 77.8,
@@ -157,12 +158,13 @@ class CommunityTransportationOptions(ScoringCriterion):
 class DesirableUndesirableActivities(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
-        self.rural_gdf = gpd.read_file(kwargs.get("rural_gdf")).to_crs("EPSG:4326")
+        self.rural_gdf = kwargs.get("rural_gdf")
         self.desirable_csv = kwargs.get("desirable_csv")
         self.grocery_csv = kwargs.get("grocery_csv")
         self.usda_csv = kwargs.get("usda_csv")
         self.tract_shapefile = kwargs.get("tract_shapefile")
         self.undesirable_csv = kwargs.get("undesirable_csv")
+        print("Loading Done")
     
     def classify_location(self, latitude, longitude):
         rural_union_geom = self.rural_gdf.unary_union
@@ -199,7 +201,7 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return 0
 
     def compute_desirable_score(self):
-        df = pd.read_csv(self.desirable_csv)
+        df = self.desirable_csv
         amenity_groups = {
             "national_big_box_store": 1, "retail_store": 2, "grocery_store": 1, "restaurant": 2,
             "hospital": 1, "medical_clinic": 1, "pharmacy": 1, "technical_college": 2,
@@ -217,7 +219,7 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return total_score
 
     def check_grocery_eligibility(self):
-        df = pd.read_csv(self.grocery_csv)
+        df = self.grocery_csv
         df_grocery = df[df['amenity_key'].str.lower() == 'grocery_store'].copy()
         if df_grocery.empty: return False, None
         df_grocery['distance'] = df_grocery.apply(
@@ -225,14 +227,14 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return df_grocery['distance'].min() <= 0.25, df_grocery['distance'].min()
 
     def check_food_desert_status(self):
-        tracts = gpd.read_file(self.tract_shapefile)
+        tracts = self.tract_shapefile
         tract_field = 'GEOID' if 'GEOID' in tracts.columns else 'CensusTract'
         site_point = Point(self.longitude, self.latitude)
         site_gdf = gpd.GeoDataFrame({'geometry': [site_point]}, crs='EPSG:4326').to_crs(tracts.crs)
         join_result = gpd.sjoin(site_gdf, tracts, how='left', predicate='within')
         if join_result.empty: return False, None, None
         tract_id = str(join_result.iloc[0][tract_field]).strip()
-        usda_df = pd.read_csv(self.usda_csv, dtype={'CensusTract': str})
+        usda_df = self.usda_csv
         usda_row = usda_df[usda_df['CensusTract'].str.strip() == tract_id]
         if usda_row.empty: return False, tract_id, None
         flag = usda_row.iloc[0]['LILATracts_1And10']
@@ -244,15 +246,18 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return 2 if in_fd and not qualifies else 0
 
     def get_undesirable_deduction(self):
-        df = pd.read_csv(self.undesirable_csv)
+        df = self.undesirable_csv
         df['distance'] = df.apply(
             lambda row: self.haversine(self.latitude, self.longitude, row['site_latitude'], row['site_longitude']), axis=1)
         return len(df[df['distance'] <= 0.25]) * 2
 
     def calculate_score(self):
         desirable = self.compute_desirable_score()
+        print("desirable_score done")
         food_deduction = self.compute_food_desert_deduction()
+        print("food done")
         undesirable_deduction = self.get_undesirable_deduction()
+        print("undesirable done")
         final = max(0, desirable - (food_deduction + undesirable_deduction))
         return min(final, 20)
 
@@ -264,10 +269,10 @@ class QualityEducation(ScoringCriterion):
         super().__init__(latitude, longitude, **kwargs)
         self.school_df = kwargs.get("school_df")
         self.state_avg_by_year = kwargs.get("state_avg_by_year")
+        self.combined_gdf = kwargs.get("combined_gdf")
 
-        combined_gdf = gpd.read_file("../../data/processed/scoring_indicators/quality_education/stacked_merged.geojson", crs="EPSG:4326")
         point = Point(self.longitude, self.latitude)  # Note: (lon, lat) order for Point
-        self.matching_area = combined_gdf[combined_gdf.contains(point)]
+        self.matching_area = self.combined_gdf[self.combined_gdf.contains(point)]
 
     def preprocess_school_name(self, name):
         name = re.sub(r'[^\w\s]', '', str(name).lower())
