@@ -56,7 +56,9 @@ class ScoringCriterion:
 
     # --- StableCommunities ---
     "indicators_df": pd.read_csv("../../data/processed/scoring_indicators/stable_communities_2024_processed.csv"),
-
+    
+    "tracts_shp": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp").to_crs("EPSG:4326"),
+    
     # --- HousingNeedsCharacteristics ---
     "census_tract_data": pd.read_csv("../../data/processed/scoring_indicators/housing_needs/merged_housing_data.csv"),
     #"revitalization_score": 4,
@@ -421,15 +423,14 @@ class StableCommunities(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
         self.indicators_df = kwargs.get("indicators_df")
-        self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp")
+        self.tracts_shp = kwargs.get("tracts_shp")
         self.tract_dict = self.find_census_tracts()
 
     def find_census_tracts(self):
         point = Point(self.longitude, self.latitude)
-        gdf_wgs = self.tracts_gdf.to_crs(epsg=4326)
-        actual_tract = gdf_wgs[gdf_wgs.contains(point)]
+        actual_tract = self.tracts_shp[self.tracts_shp.contains(point)]
 
-        gdf_meters = self.tracts_gdf.to_crs(epsg=3857)
+        gdf_meters = self.tracts_shp.to_crs(epsg=3857)
         point_meters = gpd.GeoSeries([point], crs=4326).to_crs(epsg=3857).iloc[0]
         point_buffer = point_meters.buffer(402)
         nearby_tracts = gdf_meters[gdf_meters.intersects(point_buffer)]
@@ -496,7 +497,7 @@ class HousingNeedsCharacteristics(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
 
-        self.tracts_gdf = gpd.read_file("../../data/raw/shapefiles/HousingNeeds/tl_2020_13_tract.zip").to_crs(epsg=4326)
+        self.tracts_gdf = kwargs.get("tracts_shp")
         self.census_tract_data_df = kwargs.get("census_tract_data", {})
         self.stable_community_score = kwargs.get("stable_community_score")
         if self.stable_community_score is None:
