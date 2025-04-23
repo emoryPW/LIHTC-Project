@@ -8,10 +8,7 @@ from shapely.geometry import Point
 import math
 import osmnx as ox
 import networkx as nx
-<<<<<<< HEAD
-=======
 import numpy as np
->>>>>>> 4bc777258ba893eb2f079a9285d07a8a079ab503
 
 ######################################################################################################################################
 
@@ -32,12 +29,8 @@ class ScoringCriterion:
     "transit_df": pd.read_csv("../../data/raw/scoring_indicators/community_trans_options_sites/georgia_transit_locations_with_hub.csv"),
 
     # --- DesirableUndesirableActivities ---
-    "rural_gdf": gpd.read_file("../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp").to_crs("EPSG:4326"),
-<<<<<<< HEAD
-    "desirable_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v2.csv"),
-=======
+    "rural_gdf_unary_union": gpd.read_file("../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp").to_crs("EPSG:4326").unary_union,
     "desirable_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v3.csv"),
->>>>>>> 4bc777258ba893eb2f079a9285d07a8a079ab503
     "grocery_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places.csv"),
     "usda_csv": pd.read_csv("../../data/raw/scoring_indicators/food_access_research_atlas.csv", dtype={'CensusTract': str}),
     "tract_shapefile": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"),
@@ -164,35 +157,23 @@ class CommunityTransportationOptions(ScoringCriterion):
 
 # --- Desirable/Undesirable Activities (Updated) ---
 class DesirableUndesirableActivities(ScoringCriterion):
-<<<<<<< HEAD
-=======
-    MILES_PER_DEG = 69.0   
-    RAD_MI        = 5.0 
->>>>>>> 4bc777258ba893eb2f079a9285d07a8a079ab503
+    #MILES_PER_DEG = 69.0   
+    #RAD_MI        = 5.0 
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
-        self.rural_gdf = kwargs.get("rural_gdf")
+        self.rural_gdf_unary_union = kwargs.get("rural_gdf_unary_union")
         self.desirable_csv = kwargs.get("desirable_csv")
         self.grocery_csv = kwargs.get("grocery_csv")
         self.usda_csv = kwargs.get("usda_csv")
         self.tract_shapefile = kwargs.get("tract_shapefile")
         self.undesirable_csv = kwargs.get("undesirable_csv")
-        print("Loading Done")
+        #print("Loading Done")
     
     def classify_location(self, latitude, longitude):
-        rural_union_geom = self.rural_gdf.unary_union
+        rural_union_geom = self.rural_gdf_unary_union
         point = Point(longitude, latitude)
         return point.within(rural_union_geom)
 
-<<<<<<< HEAD
-    def manhattan_distance(self, lat1, lon1, lat2, lon2):
-        lat_diff = abs(lat2 - lat1) * 69
-        mean_lat = math.radians((lat1 + lat2) / 2)
-        lon_diff = abs(lon2 - lon1) * 69 * math.cos(mean_lat)
-        return lat_diff + lon_diff
-
-=======
->>>>>>> 4bc777258ba893eb2f079a9285d07a8a079ab503
     def haversine(self, lat1, lon1, lat2, lon2):
         R = 3958.8
         phi1, phi2 = map(math.radians, [lat1, lat2])
@@ -217,23 +198,6 @@ class DesirableUndesirableActivities(ScoringCriterion):
         return 0
 
     def compute_desirable_score(self):
-<<<<<<< HEAD
-        df = self.desirable_csv
-        amenity_groups = {
-            "national_big_box_store": 1, "retail_store": 2, "grocery_store": 1, "restaurant": 2,
-            "hospital": 1, "medical_clinic": 1, "pharmacy": 1, "technical_college": 2,
-            "school": 1, "town_square": 1, "community_center": 1, "public_park": 1,
-            "library": 1, "fire_police_station": 2, "bank": 2, "place_of_worship": 2, "post_office": 2
-        }
-        total_score = 0
-        for amenity, group in amenity_groups.items():
-            df_subset = df[df['amenity_key'].str.lower() == amenity.lower()].copy()
-            if df_subset.empty: continue
-            df_subset['distance'] = df_subset.apply(
-                lambda row: self.manhattan_distance(self.latitude, self.longitude, row['lat'], row['lon']), axis=1)
-            min_dist = df_subset['distance'].min()
-            total_score += self.compute_score(min_dist, group)
-=======
         """
         Optimised version: 5-mile bounding box, vectorised Manhattan
         distance, single groupby-min, then QAP scoring.
@@ -245,8 +209,8 @@ class DesirableUndesirableActivities(ScoringCriterion):
         lat, lon = self.latitude, self.longitude
 
         # Bounding-box pre-filter
-        lat_tol = RAD_MI / MILES_PER_DEG
-        lon_tol = RAD_MI / (MILES_PER_DEG * math.cos(math.radians(lat)))
+        lat_tol = 5.0 / 69.0
+        lon_tol = 5.0 / (69.0 * math.cos(math.radians(lat)))
 
         df = df[
             (df["lat"].between(lat - lat_tol, lat + lat_tol)) &
@@ -260,14 +224,14 @@ class DesirableUndesirableActivities(ScoringCriterion):
         lat_arr = df["lat"].values
         lon_arr = df["lon"].values
 
-        lat_diff = np.abs(lat_arr - lat) * MILES_PER_DEG
-        lon_diff = np.abs(lon_arr - lon) * MILES_PER_DEG * np.cos(
+        lat_diff = np.abs(lat_arr - lat) * 69.0
+        lon_diff = np.abs(lon_arr - lon) * 69.0 * np.cos(
             np.radians((lat_arr + lat) / 2)
         )
         df["distance"] = lat_diff + lon_diff
 
         # Keep only amenities truly ≤ 5 mi
-        df = df[df["distance"] <= RAD_MI]
+        df = df[df["distance"] <= 5.0]
         if df.empty:
             return 0.0
 
@@ -295,7 +259,6 @@ class DesirableUndesirableActivities(ScoringCriterion):
                 continue
             total_score += self.compute_score(dist, group)  
 
->>>>>>> 4bc777258ba893eb2f079a9285d07a8a079ab503
         return total_score
 
     def check_grocery_eligibility(self):
@@ -333,11 +296,11 @@ class DesirableUndesirableActivities(ScoringCriterion):
 
     def calculate_score(self):
         desirable = self.compute_desirable_score()
-        print("desirable_score done")
+        #print("desirable_score done")
         food_deduction = self.compute_food_desert_deduction()
-        print("food done")
+        #print("food done")
         undesirable_deduction = self.get_undesirable_deduction()
-        print("undesirable done")
+        #print("undesirable done")
         final = max(0, desirable - (food_deduction + undesirable_deduction))
         return min(final, 20)
 
