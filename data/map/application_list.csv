@@ -1,0 +1,215 @@
+year,development_id,development_name,ownership_entity_name,ownership_entity_email,ownership_entity,lat,lon,dca_score,status,credit_allocation,geographic_pool,activity_type,set_aside_or_pool
+2022,2022-004,Mason Grove,Kevin N. Buckner,kbuckner@tbgresidential.com,"Gibson Park, LP",34.474059,-84.432382,71,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-010,Vinings Newport,"Lowell R. Barron, II",lbarron@thevantagegroup.biz,"The Vinings at Newport, LP",30.7972,-81.611202,71,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-007,Cypress Reserve,Tim Thrasher,tim.thrasher@capna.org,"Cypress Reserve, LP",31.122127,-83.414765,71,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-044,Chattooga Crssg,Jeff Beaver,jeff@olympiaconstruction.net,"Chattooga Crossing, LP",34.518721,-85.313899,70,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-016,Union Station,David A. Brown,dbrown@invmgt.com,"DHM Lowndes, LP",30.985643,-83.382613,69,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-028,Vllg at Paradise,Rhett Holmes,rholmes@idpproperties.com,"Village at Paradise, LP",31.518733,-83.849725,69,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-045,MainStreet Auburn,Brendan Barr,brendan@onestreetres.com,"MainStreet Auburn, LP",34.015005,-83.823634,68.5,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-034,Mountain View,David Searles,davidsearles@crt-trust.com,Beverly J. Searles Foundation,34.869264,-83.950955,68.5,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-054,Magnolia Place,David Searles,davidsearles@crt-trust.com,Beverly J. Searles Foundation,34.8567012,-84.33268754,65,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-037,Villa Rica Sr,Matthew Rule,mrule@nationalchurchresidences.org,Villa Rica Senior Housing Limited Partnership,33.70178,-84.94155,63,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-026,Arbours Town Brnch,Samuel Johnston,Sam@arbourvalley.com,"Arbours Town Branch, LLC",33.733892,-84.91124,64,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-018,Cedarbrk Cmmns,Steve Boone,sboone@buckeyehope.org,Buckeye Community Hope Foundation,30.833377,-83.949035,63.5,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-059,Cave Spring TH,Sandra D. Hudson,shudson@nwgha.com,"Cave Spring NWGHA 2022, LP",34.11212,85.33665,58,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-061,Furlow New Jestr Redev,Paul Robinson,paul@sepiatransformationpartners.com,"Furlow New Jester Redevelopment 2022, LP",31.23601494,-84.21311039,54,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-032,Dogwood Trail 2,Mitchell Davenport,mdavenport@clementdev.com,"Dogwood Trail Apartments II, LP",31.578429,-84.107693,71.5,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-060,Parc at Solomon,Richelle Patton,richelle@collaborativehousingsolutions.com,"Solomon & 5th Street Partners, LP",33.248878,-84.260105,71,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-002,Crescent Sr,Devin Blankenship,Devin@TalonDevelopmentLLC.com,"Crescent Senior I, LP",33.550548,-84.420449,70.5,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-040,John Graham P1,Sandra D. Hudson,shudson@nwgha.com,"John Graham Homes 1 NWGHA, LP",34.23716,-85.17178,65,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-013,3109 Anvilblock,Vaughn Zimmerman,zpse@wilhoitproperties.com,"Flats at Lake View, LP",33.633453,-84.288012,65,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-015,1700 Drayton St,Mario Procida,mprocida@procidacompanies.com,Pinyan/Procida Development Group,32.059931,-81.097365,64.5,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-038,Flats at Jackson,Brian McGeady,brian.mcgeady@mvahpartners.com,Flats on Jackson LLC,33.253828,-84.241805,50.5,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-025,Kendrick Place,"David Cooper, Jr.",dcooper@wodagroup.com,WC Midtown Lofts LP,33.485968,-81.990051,70.5,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-024,Midtown Lofts,David Cooper,dcooper@wodagroup.com,WC Midtown Lofts LP,32.477643,-84.939746,70,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-033,Harding Sr,Brian McGeady,brian.mcgeady@mvahpartners.com,Harding Senior Lofts LLC,33.416977,-82.027484,56,Non-Select,,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-050,Andover Place,Jonathan L. Wolf,jwolf@wendovergroup.com,"Andover Place, L.P.",33.824109,-84.617989,73,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-043,Havenwd Gdns 3,Max Elbe,max@lchousing.com,"Havenwood Gardens III, LP",32.407876,-83.336937,73,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-005,Haddock Lndg,William H. Gross,whgross@whgross.com,W.H. Gross Construction Company,30.782231,-81.648266,72,Non-Select,,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-041,Spring Ridge,Max Elbe,max@lchousing.com,"Spring Ridge Colquitt, LP",31.16738,-84.730963,77,Select,910000,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-031,Juniper Vllg,Josh Thomason,josh@piedmonthousinggroup.com,"Garden City Senior Village, LP",34.898724,-84.949546,75,Select,935500,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-042,Dogwood Trace,Max Elbe,max@lchousing.com,"Dogwood Trace, LP",31.210819,-83.24466,74,Select,959000,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-009,Magnolia Villas,Robert Rogers,robrogers@voase.org,"Tift Magnolia Villas, LP",31.45944,-83.55045,74,Select,1035000,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-023,Carmichael Cmmns,David Cooper,dcooper@wodgroup.com,Carmichael Commons LP,33.57583,-83.47295,73,Select,1035000,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-011,Forest at Kenton,"Lowell R. Barron, II",lbarron@thevantagegroup.biz,"The Forest at Kenton, LP",32.777,-84.874954,73,Select,974279,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-012,Cove Inverness,Mark E. English,mark@nahpa.org,"The Cove at Inverness, LP",33.115021,-84.343503,73,Select,850237,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-021,Carrington Twn Ctr,"Louie A. Lange, III",l.lange@commonwealthco.net,"Carrington Town Center, LLC",31.92657,-81.29511,72.5,Select,914000,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-006,Bryant's Lndg,William H. Gross,whgross@whgross.com,W.H. Gross Construction Company,32.45732,-81.79788,72,Select,964120,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-048,Waterford,W. David Morrow,davidm@morrowrealty.com,"Effingham Housing, LLLP",32.247801,-81.218201,72,Select,1035000,Rural,New Affordability,Rural Pool (New Supply)
+2022,2022-046,Harvest Station,Rhett Holmes,rholmes@idpproperties.com,Harvest Station,30.818924,-83.2666,77,Select,1076400,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-029,Tanner Place,Paul Robinson,paul@sepiatransformationpartners.com,"CHA Shipp Street Redevelopment 2021, LP",34.23742,-84.48474,74,Select,1065000,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-001,Kelleytown Sr,Phillip Ellen,phillipellen@aol.com,"Paladin, Inc.",33.546103,-84.136814,74,Select,1121431,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-014,Flats at Lake View,Vaughn Zimmerman,zpse@wilhoitproperties.com,"Flats at Lake View, LP",32.579462,-83.697283,74,Select,1100000,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-020,BTW South PI,Lisa Walters,lwalters@columbushousing.org,"BTW South I, L.P.",32.454369,-84.984998,73.5,Select,1150000,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-003,Pointe River,Devin Blankenship,Devin@TalonDevelopmentLLC.com,"PR Family I, LP",31.617295,-84.226235,73,Select,1149909,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-030,Garden City Sr,Josh Thomason,josh@piedmonthousinggroup.com,"Garden City Senior Village, LP",33.494722,-82.076355,72.5,Select,1002500,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-008,11th Ave. Sr,Michael T. Austin,maustin@maconhousing.com,"11th Ave. Housing Partners, LP",32.48209,-84.977384,72,Select,1116554,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-039,West Pointe Sr,Philip Searles,philipsearles@gmail.com,"West Pointe Senior Village, LP",31.614595,-84.229048,72,Select,1069661,Other Metro,New Affordability,Other Metro Pool (New Supply)
+2022,2022-058,Walton Crossing P1,Keith A. Davidson,kdavidson@waltoncommunities.com,"Walton Crossing Norcross 1, L.P.",33.936529,-84.204318,76.5,Select,1150000,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-017,Vllg at Legacy P1,Douglas S. Faust,dsf@decaturha.org,"Village at Legacy I, LP",33.764334,-84.277346,76,Select,1150000,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-027,Oasis,Chris Eisenzimmer,chris.e@blueridgeatlantic.com,"Oasis Apartments, LLC",33.94518,-84.20315,73.5,Select,1150000,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-019,Anthem III,"Wiley A. Tucker, III",jody@prestwickcompanies.com,"Anthem Senior III, LP",33.70717,-84.59093,72.5,Select,1034045,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-055,Abbngtn Midway,Eric Buffenbarger,gaapps@reaventures.com,"Dekalb Abbington at Midway, LP",33.764477,-84.251049,67.5,Select,1150000,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-049,Clairmont Sr,James Alexander,James.Alexander@mercyhousing.org,"Clairmont Sr MHSE HADC HDC, LP",33.879063,-84.308579,66,Select,785000,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-035,Gibson Park ,Kevin Buckner,kbuckner@tbgresidential.com,"Gibson Park, LP",33.61448,-84.516735,50.5,Select,830000,Atlanta Metro,New Affordability,Atlanta Metro Pool (New Supply)
+2022,2022-051,Bon Air HTC,Ryan Fuson,ryan.fuson@redwoodhousing.com,"Bon Air Apartments, LP",33.47667,-82.01051,37,Non-Select,,Other Metro,Preservation,Housing Tax Credit Set-Aside
+2022,2022-056,Richmnd Summit HTC,Ryan Fuson,ryan.fuson@redwoodhousing.com,"Richmond Summit Apartments, LP",33.47449,-81.96509,33,Non-Select,,Other Metro,Preservation,Housing Tax Credit Set-Aside
+2022,2022-052,Bon Air HUD,Ryan Fuson,ryan.fuson@redwoodhousing.com,"Bon Air Apartments, LP",33.47667,-82.01051,37,Non-Select,,Other Metro,Preservation,HUD Rental Assistance Set-Aside
+2022,2022-057,Richmnd Summit RA,Ryan Fuson,ryan.fuson@redwoodhousing.com,"Richmond Summit Apartments, LP",33.47449,-81.96509,33,Non-Select,,Other Metro,Preservation,HUD Rental Assistance Set-Aside
+2022,2022-047,Heritage Place,James Alexander,james.alexander@mercyhousing.org,"MHSE 18 Heritage Place, L.P.",32.060789,-81.108194,43,Select,1035000,Other Metro,Preservation,Housing Tax Credit Set-Aside
+2022,2022-022,Creekstone,Martin H. Petersen,ppetersen@hallmarkco.com,"Hallmark Creekstone, LP",33.909212,-84.798794,43,Select,970000,Atlanta Metro,Preservation,Housing Tax Credit Set-Aside
+2022,2022-053,Fair Oaks Lane,George Baker,gbaker@cahec.com,CAHEC Properties Corporation,32.277367,-81.226476,27,Select,413164,Rural,Preservation,Housing Tax Credit Set-Aside
+2022,2022-036,Covington Sq,Mark Kemp,mkemp@rebuildamericainc.com,"Covington Square Preservation, LP",33.595883,-83.862569,42,Select,1035000,Other Metro,Preservation,HUD Rental Assistance Set-Aside
+2023,2023-044,Maple Ridge,W. David Morrow,davidm@morrowrealty.com,,30.871953,-83.933374,71.5,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-045,Oak Ridge Reserve,Robert Rogers,rrogers@voase.org,,32.19226,-83.163893,71.5,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-052,West Point Village Phase II,Richelle Patton,richelle@collaborativehousingsolutions.com,,32.876573,-85.158506,71.5,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-023,Spring Creek Commons,David Russell,davidrussell@rivernorthdev.com,,32.293408,-84.026166,71,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-042,Gateway Landing,Mark Karras,mak44@bellsouth.net,,31.480684,-82.846539,71,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-054,Magnolia Place,David Searles,davidsearles@crt-trust.com,,34.8567012,-84.33268754,69,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-063,Houston Lake Homes,Brian Parent,bjparent@comcast.net,,32.46828,-83.71671,69,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-021,The Villas at Camborne,"Lowell R. Barron, II",lbaron@thevantagegroup.biz,,34.573567,-83.310169,68.5,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-022,The Bridges at Lincom,"NAHPA Development, LLC",mark@nahpa.org,,,,68,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-008,Cave Spring Townhomes,Sandra D. Hudson,shudson@nwgha.com,,34.112,-85.336,66,Non-Select,,Rural,New Affordability,Rural (New Supply)
+2023,2023-005,Sentry,Devin Blankenship,Devin@TalonDevelopmentLLC.com,,32.641773,-83.689861,71,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-018,Watson Pointe,"David Cooper, Jr.",dcooper@wodagroup.com,,33.480842,-81.97987,71,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-036,Walton Way Crossing,Tim Thrasher,Aron.boldog@capna.org,,33.470755,-81.974258,71,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-074,Harvest Station II,Rhett Holmes,sbrooks@idpproperties.com,,30.818623,-83.265127,71,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-064,Dogwood Trail Apartments II,Mitchell Davenport,mdavenport@clementdev.com,,31.57805,-84.10728,70.5,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-015,Meding Street Station,William H. Gross,whgross@whgross.com,,32.039781,-81.114897,70,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-012,1700 Drayton St,Mario Procida,mprocida@procidacompanies.com,,32.059931,-81.097365,69.5,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-019,Cusseta Crossing,Jason Maddox,jason@MACOCompanies.com,,32.439104,-84.943867,69,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-067,Berwick Senior II,Jacob Engle,jacob.engle@cavestatecos.com,,32.0317,-81.22135,69,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-053,HearthSide Riverdale (Phase II),Brendan Barr,brendan@onestreetres.com,,33.568634,-84.416302,68.5,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-030,Owen's Landing,Jeremy Bain,jeremy.bain@olympiaconstruction.net,,32.592206,-83.641186,67,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-058,Chapman Flats,Brian McGeady,brian.mcgeady@pivotal-hp.com,,32.61327,-83.70291,66,Non-Select,,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-004,Finley Place,"Wiley A. Tucker, III",jody@prestwickcompanies.com,,33.823971,-84.616553,73,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-062,Wesley Square,Brendan Barr,brendan@onestreetres.com,,33.902836,-84.205688,71.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-049,Mason Heights,Kevin Buckner,kbuckner@tbgresidential.com,,33.724328,-84.500834,71,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-060,Stone Hill Apartments,James Bernstein,jay@fitchirick.com,,33.70553,-84.14303,70.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-070,Capstone at Honey Creek,Mike Austin,maustin@maconhousing.com,,,,70,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-055,Fairhaven on Campbellton,"Louie A. Lange, III",l.lange@commonwealthco.net,,33.70272,-84.47697,69.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-014,Abbington Court,Eric Buffenbarger,gaapps@reaventures.com,,33.859553,-84.607997,69,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-073,Everton Commons,Jonathan L. Wolf,jwolf@wendovergroup.com,,,,68,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-069,Hamilton Hills Phase II,Brian Swanton,bswanton@gormanusa.com,,33.752001,-84.472129,74,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-029,Grove Park Gardens II,Carmen Chubb,cchubb@columbiares.com,,33.77122,-84.435259,73.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-035,Hammer Pointe,"David Cooper, Jr.",dcooper@wodagroup.com,,33.730326,-84.387469,73.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-026,West Pine Residences,Max Elbe,max@lchousing.com,,31.518618,-83.848099,75,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-032,Overlook at Ellijay,Phil Ellen,phillipellen@aol.com,,34.685191,-84.495402,75,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-051,Windsor Crossing,Josh Thomason,josh@piedmonthousinggroup.com,,31.208709,-83.218197,75,Select,1080000,Rural,New Affordability,Rural (New Supply)
+2023,2023-025,Valley Trail,Max Elbe,max@lchousing.com,,34.947959,-83.846824,74,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-043,Douglass School Senior Apartments,Jonathan R. Toppen,jontoppen@tapestrydevelopment.org,,30.839244,-83.99452,73,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-016,Haddock Landing,William H. Gross,whgross@whgross.com,,30.782231,-81.648266,73,Select,1015000,Rural,New Affordability,Rural (New Supply)
+2023,2023-039,Carmichael Commons II,"David Cooper, Jr.",dcooper@wodagroup.com,,33.575735,-83.47308,73,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-059,Belwood Terrace,Jon McKnight,jmcknight@southeasthousing.com,,34.46197805,-84.914368,73,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-013,Hardin Terrace II,Vaughn Zimmerman,vzimmerman@wilhoitproperties.com,,34.139233,-83.599026,72,Select,1105000,Rural,New Affordability,Rural (New Supply)
+2023,2023-020,Oakside Apartments,Charlena Brown,charlena@sepiatransformationpartners.com,,34.25325629,-84.48987858,76,Select,1225000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-031,Freedom's Path at Augusta III,Judith Caira,judith.caira@ahshome.org,,33.46747,-82.025873,75,Select,1225000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-007,Peaks of Douglas,Chase Northcutt,CNorthcutt@rhgroup.org,,33.719681,-84.737334,73,Select,1135000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-024,Westchester Village,Philip Searles,philipsearles@gmail.com,,33.53651,-84.369739,73,Select,1225000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-048,Parc at Solomon,Richelle Patton,richelle@collaborativehousingsolutions.com,,33.248633,-84.259632,73,Select,1135000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-050,J.R. Johnson Legacy Village,Josh Thomason,josh@piedmonthousinggroup.com,,33.972314,-83.363763,72,Select,1160000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-075,Davis Exchange,Rhett Holmes,rholmes@idpproperties.com,,31.57697,-84.150711,72,Select,1013000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-006,Helix,Devin Blankenship,Devin@TalonDevelopmentLLC.com,,33.550548,-84.420449,71.5,Select,1225000,Other Metro,New Affordability,Other Metro (New Supply)
+2023,2023-017,Hollywood Family Apartments,Sharon D. Guest,sharon@radiantdevelops.com,,33.809778,-84.472022,76,Select,1159000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-002,Village at Legacy Phase 2,Douglas S. Faust,dsf@decaturha.org,,33.76414,-84.27866,75,Select,1225000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-040,McAuley Park Phase II,Timothy I. Henkel,thenkel@pennrose.com,,33.752915,-84.375418,75,Select,1120000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-003,Wilshire II,"Wiley A. Tucker, III",jody@prestwickcompanies.com,,33.870911,-84.53237,74.5,Select,1140000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-041,RHA Redevelopment Phase I,Timothy I. Henkel,thenkel@pennrose.com,,34.018738,-84.356588,74,Select,1120000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-057,Springview Apartments,Chris Eisenzimmer,chris.e@blueridgeatlantic.com,,33.690545,-84.271939,74,Select,1225000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-071,Legacy at Walton Crossing Phase 2,Keith A. Davidson,kdavidson@waltoncommunities.com,,,,73.5,Select,1135000,Atlanta Metro,New Affordability,Atlanta Metro (New Supply)
+2023,2023-033,Heritage Apartments,Steven T. Johnson,steve.johnson@tishcollc.com,,33.278968,-83.965148,43,Non-Select,,N/A,Preservation,USDA Set-Aside
+2023,2023-001,John Graham Homes,Sandra D. Hudson,shudson@nwgha.com,,34.23716,-85.17178,46,Non-Select,,N/A,Preservation,HUD RAD Set-Aside
+2023,2023-034,Princeton Court ,Matt Rule,mrule@nationalchurchresidences.org,,33.656274,-84.438166,45,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-068,Blount Commons,Brian McGeady,brian.mcgeady@pivotal-hp.com,,31.393476,-81.428048,42,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-038,Meadowood Park,Thompson Gooding,tgooding@ambling.com,,32.519962,-82.90242,43,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-072,Legacy at Walton Village,Keith A. Davidson,kdavidson@waltoncommunities.com,,33.914802,-84.558681,42,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-077,Gateway Highland Park,Allan Rappuhn,arappuhn@gatewaymgt.com,,33.742626,-84.751297,42,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-076,Gateway Glencoe Trace,Allan Rappuhn,arappuhn@gatewaymgt.com,,33.275542,-84.298659,41,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-033,Heritage Apartments,Steven T. Johnson,steve.johnson@tishcollc.com,,33.278968,-83.965148,41,Non-Select,,N/A,Preservation,USDA Set-Aside
+2023,2023-056,Brooks Hollow Apartments,George Baker,gbaker@cahec.com,,34.461346,-84.419494,40,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-061,Tan Yard Branch I Apartments,George Baker,gbaker@cahec.com,,34.87388,-83.953698,40,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-028,Ashley Midtown I,Valerie Edwards,vedwards@integral-online.com,,32.057856,-81.073981,46,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-065,Richmond Summit,Ryan Fuson,ryan.fuson@redwoodhousing.com,,33.47449,-81.96509,41,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-066,Bon Air,Ryan Fuson,ryan.fuson@redwoodhousing.com,,33.47667,-82.01051,39,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-065,Richmond Summit,Ryan Fuson,ryan.fuson@redwoodhousing.com,,33.47449,-81.96509,45,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-066,Bon Air,Ryan Fuson,ryan.fuson@redwoodhousing.com,,33.47667,-82.01051,45,Non-Select,,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-011,Hillmont Apartments,Martin H. Petersen,ppetersen@hallmarkco.com,,30.68063,-82.23071,49,Select,500000,N/A,Preservation,USDA Set-Aside
+2023,2023-027,Bobby Jones Villas,Mike Austin,maustin@maconhousing.com,,32.79504,-83.7145,47,Select,892048,N/A,Preservation,HUD RAD Set-Aside
+2023,2023-047,Magnolia Place Apartments,David Brown,dbrown@invmgt.com,,31.44326,-83.4973,49,Select,654382,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-010,Charlton Court,Martin H. Petersen,ppetersen@hallmarkco.com,,30.84084,-82.00184,48,Select,518000,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-009,Pinewood Park,Chase Northcutt,CNorthcutt@rhgroup.org,,32.82744365,-83.71899519,46,Select,1105000,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-046,Lafayette Village,C. Jeffrey Rice,tgrimes@guilfordcompanies.com,,33.021229,-85.070037,46,Select,865000,N/A,Preservation,Housing Tax Credit Set-Aside
+2023,2023-037,Hillside Apartments,Adam Templer,adam@bearreg.com,,33.329136,-83.376649,46,Select,1105000,N/A,Preservation,HUD Rental Assistance Set-Aside
+2024,2024-057,Chattooga Ridge,Josh Thomason,josh@piedmonthousinggroup.com,"Piedmont Housing Group II, LLC; Helping Hands Ending Hunger, Inc.",34.502561,-85.329586,81.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-029,Perry Commons,Jeremy Bain,jeremy.bain@olympiaconstruction.net,"Olympia Development, LLC; Perry Housing Authority",32.450287,-83.752668,80.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-052,Peaks of Dahlonega II,Chase Northcutt,cnorthcutt@rhgroup.org,Resource Housing Group; Landbridge Development,34.55533,-83.968259,80.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-053,Abbington Blue Ridge,Eric Buffenbarger,gaapps@reaventures.com,"Rea Ventures Group, LLC",34.844039,-84.336024,80,Non-Select,,Rural,New Affordability,Rural
+2024,2024-011,Arbours at Town Branch,Samuel Johnston,Sam@arbourvalley.com,"Arbour Valley Development, LLC",33.733892,-84.91124,79.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-051,Peaks of Elrod,Chase Northcutt,cnorthcutt@rhgroup.org,Resource Housing Group; Landbridge Development,34.522462,-83.519171,79.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-067,Magnolia Place,David Searles,davidsearles@crt-trust.com,Beverly J. Searles Foundation; Five Points Development,34.8567012,-84.33268754,79.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-005,The Villas at Camborne,"Lowell R. Barron, II",lbarron@thevantagegroup.biz,"Vantage Development, LLC",34.573567,-83.310169,79,Non-Select,,Rural,New Affordability,Rural
+2024,2024-032,Capstone at Blue Ridge,"R.B. Coats, III",rcoats@tbf-inc.org,"The Banyan Foundation; Park Terrace Development, LLC",34.878123,-84.307962,79,Non-Select,,Rural,New Affordability,Rural
+2024,2024-039,Retreat at McIntosh Farms,Kristi Morgan,k.morgan@commonwealthco.net,Commonwealth Development Corporation of America,31.63724,-84.24108,79,Non-Select,,Rural,New Affordability,Rural
+2024,2024-033,Capstone at Magnolia Creek,"R.B. Coats, III",rcoats@tbf-inc.org,"The Banyan Foundation; Park Terrace Development, LLC",32.161227,-81.925761,75.5,Non-Select,,Rural,New Affordability,Rural
+2024,2024-008,Summit at Hickory Creek,Kevin Buckner,kbuckner@tbgresidential.com,"TBG Development Services, Inc.",34.259887,-84.471948,83,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-047,Classic City Heights Apartments,Christopher Eisenzimmer,chris.e@blueridgeatlantic.com,"GA BRAD Developer, LLC; Athens Housing Redevelopment, Inc.",33.944183,-83.437921,83,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-055,Harding Court Senior Apartments,Rhett Holmes,rholmes@idpproperties.com,"Integrity Development Partners, LLC; Albany Dougherty County Land Bank ",31.566693,-84.171181,83,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-025,Cusseta Crossing,Jason Maddox,jason@macocompanies.com,"MACO Development Company, LLC; Enriched Services Program",32.439104,-84.943867,82,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-059,The Benson,Devin Blankenship,Devin@TalonDevelopmentLLC.com,Talon Development LLC; Grove Creek Ventures LLC,31.811994,-81.604555,82,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-070,Wisteria Gardens of Newnan Phase 2,David Searles,davidsearles@crt-trust.com,Beverly J. Searles Foundation; Five Points Development,33.40512,-84.721327,81.5,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-009,HearthSide Riverdale Phase II,Brendan Barr,brendan@onestreetres.com,"One Street Development, LLC; DreamKey Partners, Inc.; Housing Authority of Clayton County",33.568634,-84.416302,81,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-019,Flats at Lakeview Phase II,Vaughn Zimmerman,vzimmerman@wilhoitproperties.com,"Zimmerman Properties SE, LLC",32.579719,-83.700408,81,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-023,Westchester Place,David Russell,davidrussell@rivernorthdev.com,"River North Development, LLC",33.558082,-84.338218,81,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-036,Berwick Sr II,Jacob Engle,jacob.engle@cavestatecos.com,"Cave State Development, LLC",32.0317,-81.22135,81,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-045,John Graham Homes,Sandra Hudson,shudson@nwgha.com,Northwest Georgia Housing Authority,34.23693,-85.16937,81,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-031,Southern Gardens,Melanie Ferrell,mferrell@invmgt.com,"DHM Developer, Inc",30.927771,-83.246048,80,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-004,1700 Drayton,Mario Procida,pprocida@procidacompanies.com,Pinyan/Procida Development Group LLC,32.059931,-81.097365,78.5,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-063,Magnolia Gardens Senior Living,Brian McGeady,brian.mcgeady@pivotal-hp.com,Pivotal Development LLC,30.833807,-83.306807,73.5,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-007,Azalea Meadows,Renee Sandell,renee@pacesfoundation.org,"Paces Preservation Partners, LLC",33.062873,-85.028451,68.5,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-071,The Sanctuary,Brian Swanton,bswanton@gormanusa.com,"Gorman & Company, LLC",33.748745,-84.389488,80.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-003,RHA Redevelopment Phase II,Timothy Henkel,thenkel@pennrose.com,Pennrose LLC; Roswell Housing Authority,34.019708,-84.357245,80,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-027,Wesley Square,Brendan Barr,brendan@onestreetres.com,"One Street Development, LLC; Gwinnett Housing Corporation",33.902836,-84.205688,79.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-043,The Vincent at Lakewood Heights,James Alexander,James.Alexander@mercyhousing.org,Mercy Housing Southeast,33.707943,-84.37978,72,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-037,Jonesboro Apartments,Sam Leone,sleone@coniferllc.com,"Conifer, LLC; WD Communities",33.690717,-84.36506,69.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-026,Lewis Crossing,"David Cooper, Jr.",dcooper@wodagroup.com,"Woda Cooper Development, Inc.; Parallel Development, LLC",33.739431,-84.387711,83.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-058,Oliver & North Apartments Phase 1,Christopher Eisenzimmer,chris.e@blueridgeatlantic.com,"GA BRAD Developer, LLC); Westside Future Fund, Inc.",33.771281,-84.415392,82.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-001,Grove Park Gardens II,Carmen Chubb,cchubb@columbiares.com,"Columbia Residential/New Affordable Housing Partners, LLC; Grove Park Foundation, Inc.",33.77122,-84.435259,81.5,Non-Select,,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-010,Moon Creek Phase I,Lisa Walters,lwalters@columbushousing.org,"Columbia Residential/New Affordable Housing Partners, LLC; The Housing Authority of Columbus, Georgia",32.560311,-84.930694,83.5,Non-Select,,Other Metro,New Affordability,Other Metro
+2024,2024-042,Halls of East Thomaston,Phil Ellen,phillipellen@aol.com,"Paladin;
+Georgia Communities",32.8950707,-84.317739,85.5,Select,1215000,Rural,New Affordability,Rural
+2024,2024-028,Pinecrest Village,Max Elbe,max@lchousing.com,"Lowcountry Housing Communities II, LLC; Helping Hands Ending Hunger, Inc.",31.518918,-82.855929,84,Select,1215000,Rural,New Affordability,Rural
+2024,2024-021,Bryant's Landing II,William H. Gross,whgross@whgross.com,W. H. Gross Construction Company,32.45719,-81.796489,83,Select,1215000,Rural,New Affordability,Rural
+2024,2024-034,West Pine Residences Phase II,Max Elbe,max@lchousing.com,"Lowcountry Housing Communities II, LLC",31.518624,-83.849184,83,Select,1215000,Rural,New Affordability,Rural
+2024,2024-054,Osprey Landings,Brian Parent,bjparent@comcast.net,Parent Development LLC; Outlook Develoment LLC,30.754044,-81.58824,82,Select,1215000,Rural,New Affordability,Rural
+2024,2024-060,The Village at Griffin Orchard,Jon McKnight,jmcknight@southeasthousing.com,"Southeast Housing Partners, LLC",33.088342,-82.032924,82,Select,1214000,Rural,New Affordability,Rural
+2024,2024-056,Windsor Crossing II,Josh Thomason,josh@piedmonthousinggroup.com,"Piedmont Housing Group II, LLC; Helping Hands Ending Hunger, Inc.",31.208724,-83.218668,82,Select,1215000,Rural,New Affordability,Rural
+2024,2024-046,Dogwood Trail Apartments II,Mitchell Davenport,mdavenport@lockwoodcompanies.com,"Lockwood Development Southeast, LLC",31.57805,-84.10728,88.5,Select,890269,Other Metro,New Affordability,Other Metro
+2024,2024-024,Watson Pointe,David Cooper,dcooper@wodagroup.com,"Woda Cooper Development, Inc.",33.480842,-81.979877,86,Select,1155000,Other Metro,New Affordability,Other Metro
+2024,2024-062,Walton Fields Phase 1,Keith A. Davidson,kdavidson@waltoncommunities.com,"Walton Communities, LLC; Community Housing Resource Corporation",34.777561,-84.955091,86,Select,1350000,Other Metro,New Affordability,Other Metro
+2024,2024-044,Harvest Station II,Rhett Holmes,rholmes@idpproperties.com,"Integrity Development Partners, LLC; Valdosta Leased Housing Corporation",30.818623,-83.265127,85,Select,1350000,Other Metro,New Affordability,Other Metro
+2024,2024-040,Pleasant Hill Landing,Michael T.Austin,maustin@maconhousing.com,"In-Fill Housing II, Inc.",32.84693,-83.63868,84.5,Select,1350000,Other Metro,New Affordability,Other Metro
+2024,2024-020,Meding Street Station,William H. Gross,whgross@whgross.com,W. H. Gross Construction Company,32.039781,-81.114897,84,Select,1350000,Other Metro,New Affordability,Other Metro
+2024,2024-061,904 Commons,Jeremy Bain,jeremy.bain@olympiaconstruction.net,"Olympia Development, LLC; CAPNA, Inc.",32.434805,-84.940079,84,Select,1198817,Other Metro,New Affordability,Other Metro
+2024,2024-014,Wisteria Gardens of Hinesville,David Searles,davidsearles@crt-trust.com,Beverly J. Searles Foundation; Five Points Development,31.844817,-81.591619,83.5,Select,1350000,Other Metro,New Affordability,Other Metro
+2024,2024-012,Finley Place,Wiley A. Tucker III,jody@prestwickcompanies.com,"Prestwick Development Company, LLC; Lemon Street Development Corporation",33.823971,-84.616553,86.5,Select,1295000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-015,Edmund Doraville,David B. Allman,dallman@regentpartners.com,"Regent Affordable Housing, LLC; Housing Authority of DeKalb County; Housing Development Corporation",33.897516,-84.286412,86.5,Select,1350000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-013,The Shelby,Wiley A. Tucker III,jody@prestwickcompanies.com,"Prestwick Development Company, LLC",33.856192,-84.347348,85,Select,1298000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-064,Hamilton Hills Phase II,Brian Swanton,bswanton@gormanusa.com,"Gorman & Company, LLC",33.752001,-84.4722129,84,Select,615000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-069,One Peachtree Senior,Egbert Perry,eperry@integral-online.com,"Integral Properties, LLC",33.753653,-84.390058,84,Select,1350000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-072,The Fifty-Five,Brian Swanton,bswanton@gormanusa.com,"Gorman & Company, LLC",33.67744,-84.44268,83.5,Select,1350000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-018,Redland Trace,Vaughn Zimmerman,vzimmerman@wilhoitproperties.com,"Zimmerman Properties SE, LLC",32.579719,-83.700408,81,Select,1350000,Atlanta Metro,New Affordability,Atlanta Metro
+2024,2024-006,The Bridges at Lincom,Mark E. English,mark@nahpa.org,"NAHPA; Vantage Development, LLC",34.357888,-82.914888,80.5,Select,1170000,Rural,New Affordability,Rural
+2024,2024-050,Pecan Grove,Chase Northcutt,cnorthcutt@rhgroup.org,Resource Housing Group; Landbridge Development,33.091477,-82.026808,76,Non-Select,,Rural,Preservation,Housing Tax Credit Set Aside
+2024,2024-048,Douglasville Proper,Jason Stubblefield,jason@rilapartments.com,"RIL Properties, LLC; Westchester Ventures, LLC",33.75156,-84.75479,72,Non-Select,,Other Metro,Preservation,Housing Tax Credit Set Aside
+2024,2024-022,Pateville Estates,Stacy Hastie,Stacy@environmentlops.com,"RR Jennings Developer, LLC; Simple Asset Management",31.946567,-83.79352,71,Non-Select,,Rural,Preservation,Housing Tax Credit Set Aside
+2024,2024-035,Liberty Crossing,Brian McGeady,brian.mcgeady@pivotal-hp.com,Pivotal Development LLC,32.458671,-84.985081,71,Non-Select,,Other Metro,Preservation,Housing Tax Credit Set Aside
+2024,2024-065,Glencoe Trace Apartments,Allan Rappuhn,arappuhn@gatewaymgt.com,Gateway Development Corporation,33.275542,-84.298659,71,Non-Select,,Other Metro,Preservation,Housing Tax Credit Set Aside
+2024,2024-066,Highland Park Senior Village,Allan Rappuhn,arappuhn@gatewaymgt.com,Gateway Development Corporation,33.742626,-84.751297,71,Non-Select,,Other Metro,Preservation,Housing Tax Credit Set Aside
+2024,2024-038,Lakeview Apartments,Michael Callaghan,mcallaghan@exactcapital.com,"Exact Capital, LLC",32.542417,-83.888252,66,Non-Select,,Rural,Preservation,HUD Rental Assistance Set Aside
+2024,2024-002,Tower Village Apartments,Martin H. Petersen,ppetersen@hallmarkco.com,"Hallmark Development Partners, LLC",34.006851,-85.039658,76,Select,715000,Rural,Preservation,USDA 515 Set Aside
+2024,2024-017,Timber Ridge Apartments,Steven T. Johnson,steve.johnson@tishcollc.com,"TISCHO Development, Inc.",32.082897,-83.78846,76,Select,1044431,Rural,Preservation,USDA 515 Set Aside
+2024,2024-049,Cave Spring Townhomes,Sandra Hudson,shudson@nwgha.com,Northwest Georgia Housing Authority,34.11161,-85.33538,70,Select,1203894,Rural,Preservation,HUD RAD Set Aside
+2024,2024-030,Harbor Pointe Apartments,Houston Brown,hbrown@invmgt.com,"DHM Developer, Inc.",31.473193,-83.48467,78,Select,888652,Rural,Preservation,Housing Tax Credit Set Aside
+2024,2024-016,Heritage Apartments,Steven T. Johnson,steve.johnson@tishcollc.com,"TISCHO Development, Inc.",33.278968,-83.965148,77,Select,772907,Rural,Preservation,Housing Tax Credit Set Aside
+2024,2024-068,Norman Berry Village,Brendan Barr,brendan@onestreetres.com,"One Street Development, LLC; Housing Authority of the City of East Point",33.673463,-84.426008,76.5,Select,1050000,Atlanta Metro,Preservation,Housing Tax Credit Set Aside
+2024,2024-041,Wisdom Woods,Todd Wind,twind@timsheldevelopment.com,"Timshel Hill Tide Developers, LLC; Timshel Partners, LLC; Hill Tide Development, LLC",33.40765,-84.56419,67,Select,707204,Other Metro,Preservation,HUD Rental Assistance Set Aside

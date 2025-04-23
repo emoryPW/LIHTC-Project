@@ -2,3 +2,9 @@ data/preprocessed/scoring_indicators/ga_wetlands_cleaned.gpkg filter=lfs diff=lf
 data/raw/gpkg/GA_Wetlands_Geopackage.gpkg filter=lfs diff=lfs merge=lfs -text
 data/preprocessed/scoring_indicators/DesirableUndesirableActivities/ga_wetlands_cleaned.gpkg filter=lfs diff=lfs merge=lfs -text
 *.shp filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
+=======
+*follium_maps.ipynb filter=lfs diff=lfs merge=lfs -text
+scripts/maps/follium_maps.ipynb filter=lfs diff=lfs merge=lfs -text
+scripts/maps/follium_maps.html filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 4bc777258ba893eb2f079a9285d07a8a079ab503
