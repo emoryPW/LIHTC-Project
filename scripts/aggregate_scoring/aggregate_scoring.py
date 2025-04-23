@@ -56,11 +56,11 @@ class ScoringCriterion:
 
     # --- StableCommunities ---
     "indicators_df": pd.read_csv("../../data/processed/scoring_indicators/stable_communities_2024_processed.csv"),
-    
     "tracts_shp": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp").to_crs("EPSG:4326"),
     
     # --- HousingNeedsCharacteristics ---
     "census_tract_data": pd.read_csv("../../data/processed/scoring_indicators/housing_needs/merged_housing_data.csv"),
+    "tracts_gdf": gpd.read_file("../../data/raw/shapefiles/HousingNeeds/tl_2020_13_tract/tl_2020_13_tract.shp").to_crs("EPSG:4326"),
     #"revitalization_score": 4,
     "in_qct": False  # Required for housing need eligibility
 } """
@@ -497,7 +497,7 @@ class HousingNeedsCharacteristics(ScoringCriterion):
     def __init__(self, latitude, longitude, **kwargs):
         super().__init__(latitude, longitude, **kwargs)
 
-        self.tracts_gdf = kwargs.get("tracts_shp")
+        self.tracts_gdf = kwargs.get("tracts_gdf")
         self.census_tract_data_df = kwargs.get("census_tract_data", {})
         self.stable_community_score = kwargs.get("stable_community_score")
         if self.stable_community_score is None:
