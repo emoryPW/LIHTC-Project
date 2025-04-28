@@ -31,7 +31,7 @@ class ScoringCriterion:
     # --- DesirableUndesirableActivities ---
     "rural_gdf_unary_union": gpd.read_file("../../data/raw/shapefiles/USDA_Rural_Housing_by_Tract_7054655361891465054/USDA_Rural_Housing_by_Tract.shp").to_crs("EPSG:4326").unary_union,
     "desirable_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v3.csv"),
-    "grocery_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places.csv"),
+    "grocery_csv": pd.read_csv("../../data/processed/scoring_indicators/desirable_activities_google_places_v3.csv"),
     "usda_csv": pd.read_csv("../../data/raw/scoring_indicators/food_access_research_atlas.csv", dtype={'CensusTract': str}),
     "tract_shapefile": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp"),
     "undesirable_csv": pd.read_csv("../../data/processed/scoring_indicators/undesirable_hsi_tri_cdr_rcra_google_places.csv"),
@@ -55,7 +55,7 @@ class ScoringCriterion:
     },
 
     # --- StableCommunities ---
-    "indicators_df": pd.read_csv("../../data/processed/scoring_indicators/stable_communities_2024_processed.csv"),
+    "indicators_df": pd.read_csv("../../data/processed/scoring_indicators/stable_communities_2024_processed_v3.csv"),
     "tracts_shp": gpd.read_file("../../data/raw/shapefiles/tl_2024_13_tract/tl_2024_13_tract.shp").to_crs("EPSG:4326"),
     
     # --- HousingNeedsCharacteristics ---
