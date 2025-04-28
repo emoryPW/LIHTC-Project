@@ -1,6 +1,9 @@
 geopandas==1.0.1
 geopy==2.4.1
-numpy==2.2.4
+networkx==3.4.2
+numpy==2.2.5
+osmnx==2.0.2
 pandas==2.2.3
 Requests==2.32.3
 Shapely==2.1.0
+thefuzz==0.22.1
